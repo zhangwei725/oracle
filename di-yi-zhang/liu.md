@@ -1,4 +1,4 @@
-### 7.1、 简介
+### 6.1、 简介
 
 1. SQL 全名是结构化查询语言（Structured Query Language）
 
