@@ -12,6 +12,6 @@
 * [第二章DML](di-er-zhang.md)
   * [一](di-er-zhang/yi.md)
   * [二](di-er-zhang/er.md)
-  * 三
+  * [三](di-er-zhang/san.md)
   * 四
 
