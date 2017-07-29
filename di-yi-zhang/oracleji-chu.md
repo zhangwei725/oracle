@@ -780,9 +780,16 @@ Oracle数据库建好后，要想在数据库里建表，必须先为数据库�
    回滚
    ```
 
-   2、示例代码
+   2、作用  
+    
 
-   \`\`\`
+
+
+
+
+  
+
+
 
 ```
 3. SET TRANSACTION
@@ -807,7 +814,7 @@ set  autocomit=false;设置手动提交；
    commit 提交；  
    savepoint  pl 保存；  
    rollback to pl 回滚到pl点  
-   \`\`\`
+
 
 ##### 7.2.4.3、操作对象\(事务\)
 
