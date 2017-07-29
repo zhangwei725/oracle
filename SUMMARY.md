@@ -7,7 +7,7 @@
   * 三
   * [四、Oracle的安装与卸载](di-yi-zhang/si.md)
   * [五、什么是Oracle数据库?](di-yi-zhang/wu.md)
-  * 六
-  * [七](di-yi-zhang/qi.md)
+  * [六](di-yi-zhang/liu.md)
+  * [七、开发重要知识点介绍](di-yi-zhang/qi.md)
 * [第二章](di-er-zhang.md)
 
