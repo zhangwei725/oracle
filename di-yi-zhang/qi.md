@@ -1,6 +1,4 @@
-## 七、开发重要知识点介绍
-
-7.1、Oracle开发工具
+### 6.1、Oracle开发工具
 
 1. SQL\*Plus\(前期学习用,开发中不用\)
 
@@ -8,32 +6,13 @@
 
 2. Oracle SQL Developer\(推荐\)
 
-   [官方网址](http://www.oracle.com/technology/software/products/sql/index.html)
-
-   ```
-   说明：Oracle公司出的管理软件，算是官方管理软件吧！只支持Oracle数据库
-   ```
+   [官方网址](http://www.oracle.com/technology/software/products/sql/index.html)说明：Oracle公司出的管理软件，算是官方管理软件吧！只支持Oracle数据库
 
 3. Navicat Premium \(推荐\)
 
-   官方网址:[http://www.navicat.com](http://www.navicat.com)
+   [官方网址](http://www.navicat.com)说明：个人现在的最爱，软件小巧，速度快捷，是一个集成数据库管理软件，可以管理MySQL、Oracle、PostgreSQL三种数据库。
 
-   说明:软件小巧，速度快捷，是一个集成数据库管理软件，可以管理MySQL、Oracle、PostgreSQL等多种主流数据库。
-
-```
-5.
-```
-
-```
-说明：
-```
-
-```
-
-```
-
-```
-### 7.2、数据库
+### 6.2、数据库
 
 1. 简介
 
@@ -50,12 +29,12 @@
    也叫全局数据库，是数据库系统的入口，它会内置一些高级权限的用户如SYS，SYSTEM等。我们用这些高级权限账号登陆就可以在数据库实例中创建表空间，用户，表了。
 
 4. 查询当前数据库名：
-```
 
-select name from v$database;
+   ```
+   select name from v$database;
+   ```
 
-```
-### 7.3、数据库实例
+### 6.3、数据库实例
 
 1. 概要
 
@@ -66,27 +45,27 @@ select name from v$database;
    实例名指的是用于响应某个数据库操作的数据库管理系统的名称。她同时也叫SID。实例名是由参数instance\_name决定的
 
 2. 查询当前数据库实例名:就是数据库安装的时候设置的名字默认是orcl
-```
 
-select instance\_name from v$instance;  
+   ```
+   select instance_name from v$instance;
    jdbc:oracle:thin:@localhost:1521:orcl（orcl就为数据库实例名）
+   ```
 
-```
    注:一个数据库可以有多个实例，在作数据库服务集群的时候可以用到
 
-### 7.4、表空间\(TableSpace\)
+### 6.4、表空间\(TableSpace\)
 
-#### 7.4.1、概要
+#### 6.4.1、概要
 
 ​ 表空间是最大的存储结构，它对应一个或多个数据文件，表空间的大小是它所对应的数据文件大小的总和，Oracle推荐将不同数据文件放进不同的表空间，一方面可以提高数据访问性能，另一个方面便于数据管理，备份，恢复操作,一个数据库实例可以有N个表空间，一个表空间下可以有N张表,用户可以自己去创建,不指定系统默认创建,
 
-#### 7.4.2、主要作用
+#### 6.4.2、主要作用
 
 1. 控制数据库数据磁盘分配:表空间可以拥有多个数据文件，然而数据文件可以存储在不同的磁盘中，从而达到了控制数据磁盘分配的目的
 
 2. 限制用户在表空间中可以使用的磁盘空间大小
 
-#### 7.4.3、常见表空间分类
+#### 6.4.3、常见表空间分类
 
 | 名称 | 作用 |
 | :--- | :--- |
@@ -95,85 +74,87 @@ select instance\_name from v$instance;
 | Users用户表空间 | 存放对应的用户的表 |
 | Experience示例表空间 | 用于存放我们安装Oracle时候创建的示例用户模式的数据信息 |
 
-#### 7.4.4、创建表空间语法
+#### 6.4.4、创建表空间语法
 
 1. 语法
-```
 
-Create TableSpace 表空间名称  
-   DataFile 表空间数据文件路径  
-   Size 表空间初始大小  
-   Autoextend on 自动扩展
+   ```
+   Create TableSpace 表空间名称  
+   DataFile 
+     表空间数据文件路径  
+   Size 
+     表空间初始大小  
+   Autoextend on
+   ```
 
-```
 2. 示例代码
-```
 
-create tablespace db\_test  
-   datafile 'D:\oracle\zhangwei\product\11.2.0\dbhome\_1\userdata\db\_test.dbf'  
+   ```
+   create tablespace db_test  
+   datafile 'D:\oracle\zhangwei\product\11.2.0\dbhome_1\userdata\db_test.dbf'  
    size 50m  
    autoextend on;
+   ```
 
-```
 3. 查看已经创建好的表空：
-```
 
-select default\_tablespace, temporary\_tablespace, d.username  
-   from dba\_users d
+   ```
+   select default_tablespace, temporary_tablespace, d.username  
+   from dba_users d
+   ```
 
-```
-### 7.5、Oracle用户
+### 6.5、Oracle用户
 
-#### 7.5.1、概要
+#### 6.5.1、概要
 
 ​ 详细内容查看附件Oralce用户管理
 
 ​ Oracle数据库建好后，要想在数据库里建表，必须先为数据库建立用户，并为用户指定表空间,
 
-#### 7.5.2、创建用户
+#### 6.5.2、创建用户
 
 1. 语法
-```
 
-CREATE USER  
+   ```
+   CREATE USER 
      用户名  
-   IDENTIFIED BY  
+   IDENTIFIED BY 
      密码  
-   DEFAULT TABLESPACE  
-    表空间\(默认USERS\)  
-   TEMPORARY TABLESPACE 临时表空间\(默认TEMP\)
+   DEFAULT TABLESPACE 
+    表空间(默认USERS)  
+   TEMPORARY TABLESPACE 临时表空间(默认TEMP)
+   ```
 
-```
 2. 示例代码：
-```
 
-CREATE USER test  
+   ```
+   CREATE USER test  
    IDENTIFIED BY 123  
-   DEFAULT TABLESPACE db\_test  
-   TEMPORARY TABLESPACE temp;
+   DEFAULT TABLESPACE db_test  
+   TEMPORARY TABLESPACE temp; 
+   ```
 
-```
 3. 有了用户，要想使用用户账号管理自己的表空间，还得给它分权限：
-```
 
-GRANT CONNECT TO test;  
+   ```
+   GRANT CONNECT TO test;  
    GRANT RESOURCE TO test;  
    GRANT dba TO test;--dba为最高级权限，可以创建数据库，表等。
+   ```
 
-```
 4. 查看数据库用户：
-```
 
-select  \* from dba\_users;  
-   \`\`\`
+   ```
+   select  * from dba_users;
+   ```
 
-### 7.6、表
+### 6.6、表
 
-#### 7.6.1 、定义
+#### 6.6.1 、定义
 
 ​ 表示关系型数据库中基本的数据结构，它是行的集合。表中的每一行包含一个或者多个列，而表中的一行数据可以理解为数据库中的一个记录
 
-#### 7.6.2、示例图
+#### 6.6.2、示例图
 
 ![](http://opzv089nq.bkt.clouddn.com/17-7-29/83631486.jpg)
 
