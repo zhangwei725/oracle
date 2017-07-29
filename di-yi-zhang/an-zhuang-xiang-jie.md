@@ -84,53 +84,53 @@
 
 18. 默认即可，不用管它，直接下一步
 
-19. ![](http://ojx4zwltq.bkt.clouddn.com/17-3-9/90784129-file_1489066974392_6373.png)
+![](http://ojx4zwltq.bkt.clouddn.com/17-3-9/90784129-file_1489066974392_6373.png)
 
-20. 默认即可，不用管它，直接下一步
+1. 默认即可，不用管它，直接下一步
 
-    ![](http://ojx4zwltq.bkt.clouddn.com/17-3-9/81995712-file_1489067008814_14fba.png)
+   ![](http://ojx4zwltq.bkt.clouddn.com/17-3-9/81995712-file_1489067008814_14fba.png)
 
-21. 这里也默认，不用管它，直接下一步
+2. 这里也默认，不用管它，直接下一步
 
-    ![](http://ojx4zwltq.bkt.clouddn.com/17-3-9/59212612-file_1489067054234_4f4c.png)
+   ![](http://ojx4zwltq.bkt.clouddn.com/17-3-9/59212612-file_1489067054234_4f4c.png)
 
-22. 这里注意！！！Oracle 对于管理员口令有建议的标准，如果密码不满足标准它会做相应的提示。
+3. 这里注意！！！Oracle 对于管理员口令有建议的标准，如果密码不满足标准它会做相应的提示。
 
-    ![](http://ojx4zwltq.bkt.clouddn.com/17-3-9/21766130-file_1489067298305_1d35.png)
+   ![](http://ojx4zwltq.bkt.clouddn.com/17-3-9/21766130-file_1489067298305_1d35.png)
 
-    虽然点击确定也可以继续使用不标准的口令。为了规范，也为了方便管理，我建议完美所有的用户名的密码都统一设置为【Oracle11gadmin】。然后继续下一步
+   虽然点击确定也可以继续使用不标准的口令。为了规范，也为了方便管理，我建议完美所有的用户名的密码都统一设置为【Oracle11gadmin】。然后继续下一步
 
-    ![](http://ojx4zwltq.bkt.clouddn.com/17-3-9/60859601-file_1489067620924_cc05.png)
+   ![](http://ojx4zwltq.bkt.clouddn.com/17-3-9/60859601-file_1489067620924_cc05.png)
 
-23. 注意！！！在此之前会先执行条件检查，如果有出现检查出现错误提示，则直接忽略即可。然后直接点击完成开始安装Oracle产品。
+4. 注意！！！在此之前会先执行条件检查，如果有出现检查出现错误提示，则直接忽略即可。然后直接点击完成开始安装Oracle产品。
 
-    ![](http://ojx4zwltq.bkt.clouddn.com/17-3-9/28998267-file_1489067669579_ad6.png)
+   ![](http://ojx4zwltq.bkt.clouddn.com/17-3-9/28998267-file_1489067669579_ad6.png)
 
-24. 正常安装流程
+5. 正常安装流程
 
-    ![](http://ojx4zwltq.bkt.clouddn.com/17-3-9/80568958-file_1489067817308_92f3.png)
+   ![](http://ojx4zwltq.bkt.clouddn.com/17-3-9/80568958-file_1489067817308_92f3.png)
 
-    ![](http://ojx4zwltq.bkt.clouddn.com/17-3-9/96610650-file_1489067837433_16a74.png)
+   ![](http://ojx4zwltq.bkt.clouddn.com/17-3-9/96610650-file_1489067837433_16a74.png)
 
-    ![](http://ojx4zwltq.bkt.clouddn.com/17-3-9/27350151-file_1489067920776_4619.png)
+   ![](http://ojx4zwltq.bkt.clouddn.com/17-3-9/27350151-file_1489067920776_4619.png)
 
-    ![](http://ojx4zwltq.bkt.clouddn.com/17-3-9/25780898-file_1489067935924_3206.png)
+   ![](http://ojx4zwltq.bkt.clouddn.com/17-3-9/25780898-file_1489067935924_3206.png)
 
-    此过程会比较慢，快则10分钟左右，慢则30分钟左右。请耐心等待。
+   此过程会比较慢，快则10分钟左右，慢则30分钟左右。请耐心等待。
 
-    ![](http://ojx4zwltq.bkt.clouddn.com/17-3-9/718077-file_1489067956024_122e7.png)
+   ![](http://ojx4zwltq.bkt.clouddn.com/17-3-9/718077-file_1489067956024_122e7.png)
 
-    ![](http://ojx4zwltq.bkt.clouddn.com/17-3-9/12427805-file_1489068061426_15fcb.png)
+   ![](http://ojx4zwltq.bkt.clouddn.com/17-3-9/12427805-file_1489068061426_15fcb.png)
 
-    ![](http://ojx4zwltq.bkt.clouddn.com/17-3-9/78660205-file_1489068087296_25.png)
+   ![](http://ojx4zwltq.bkt.clouddn.com/17-3-9/78660205-file_1489068087296_25.png)
 
-25. 安装完成，会生成以下界面。
+6. 安装完成，会生成以下界面。
 
-    ![](http://ojx4zwltq.bkt.clouddn.com/17-3-9/34093966-file_1489069198147_14c0d.png)
+   ![](http://ojx4zwltq.bkt.clouddn.com/17-3-9/34093966-file_1489069198147_14c0d.png)
 
-    本次安装是自动实现数据库的创建，每个数据库都需要进行一些额外的配置。这里选择【口令管理】。
+   本次安装是自动实现数据库的创建，每个数据库都需要进行一些额外的配置。这里选择【口令管理】。
 
-    ​
+   ​
 
 随后进入口令管理程序，主要操作\(设置\)以下几个用户：
 
@@ -165,10 +165,4 @@
 那么此时数据库可以说是安装完成了。但是，安装完成之后，Oracle 软件系统会在Windows系统服务中自动启动一些服务。
 
 ​
-
-
-
-
-
-
 
