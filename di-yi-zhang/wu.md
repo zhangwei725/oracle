@@ -68,7 +68,9 @@ Oracle DataBase是由两个部分组成
 
 1. 结构图
 
-2. 说明
+      ![](/assets/import1.png)
+
+1. 说明
 
    1、**控制文件：**
 
