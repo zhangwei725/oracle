@@ -16,7 +16,9 @@
 
 3. Navicat Premium \(推荐\)
 
-   官方网址:http://www.navicat.com
+   官方网址:[http://www.navicat.com](http://www.navicat.com)
+
+         
 
 ```
 4.
@@ -137,11 +139,11 @@ select default\_tablespace, temporary\_tablespace, d.username
 1. 语法
 ```
 
-CREATE USER   
+CREATE USER  
      用户名  
-   IDENTIFIED BY   
+   IDENTIFIED BY  
      密码  
-   DEFAULT TABLESPACE   
+   DEFAULT TABLESPACE  
     表空间\(默认USERS\)  
    TEMPORARY TABLESPACE 临时表空间\(默认TEMP\)
 
