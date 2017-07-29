@@ -18,16 +18,14 @@
 
    官方网址:[http://www.navicat.com](http://www.navicat.com)
 
-   说明
-
-
+   说明:个人现在的最爱，软件小巧，速度快捷，是一个集成数据库管理软件，可以管理MySQL、Oracle、PostgreSQL三种数据库。
 
 ```
 5.
 ```
 
 ```
-说明：个人现在的最爱，软件小巧，速度快捷，是一个集成数据库管理软件，可以管理MySQL、Oracle、PostgreSQL三种数据库。
+说明：
 ```
 
 ```
