@@ -10,7 +10,6 @@
 
    ```
 
-   说明：Oracle公司出的管理软件，算是官方管理软件吧！只支持Oracle数据库
    ```
 
 3. Navicat Premium \(推荐\)
