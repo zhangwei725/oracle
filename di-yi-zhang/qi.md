@@ -6,11 +6,11 @@
 
    是Oracle自带的管理工具，在上一节中命令行便是调用了该工具。当然，这个工具也可以在开始菜单中找到，直接打开。请注意登录的时候，无法用sys登录
 
-   1. Oracle SQL Developer\(推荐\)
+2. Oracle SQL Developer\(推荐\)
 
-      [官方网址](http://www.oracle.com/technology/software/products/sql/index.html)说明：Oracle公司出的管理软件，算是官方管理软件吧！只支持Oracle数据库
+   [官方网址](http://www.oracle.com/technology/software/products/sql/index.html)说明：Oracle公司出的管理软件，算是官方管理软件吧！只支持Oracle数据库
 
-   2. Navicat Premium \(推荐\)
+   1. Navicat Premium \(推荐\)
 
       [官方网址](http://www.navicat.com)说明：个人现在的最爱，软件小巧，速度快捷，是一个集成数据库管理软件，可以管理MySQL、Oracle、PostgreSQL三种数据库。
 
