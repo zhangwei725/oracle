@@ -8,10 +8,12 @@
 
 2. Oracle SQL Developer\(推荐\)
 
-   [官方网址](http://www.oracle.com/technology/software/products/sql/index.html) 
+   [官方网址](http://www.oracle.com/technology/software/products/sql/index.html)
 
-3. 
-4. Navicat Premium \(推荐\)
+                          说明：Oracle公司出的管理软件，算是官方管理软件吧！只支持Oracle数据库
+
+1. 
+2. Navicat Premium \(推荐\)
 
    [官方网址](http://www.navicat.com)
 
