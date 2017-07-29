@@ -10,7 +10,7 @@
   * [六、SQL结构化查询语言](di-yi-zhang/liu.md)
   * [七、开发重要知识点介绍](di-yi-zhang/qi.md)
 * [第二章DML](di-er-zhang.md)
-  * [一](di-er-zhang/yi.md)
+  * [一、查询基础](di-er-zhang/yi.md)
   * [二](di-er-zhang/er.md)
   * [三](di-er-zhang/san.md)
   * [四](di-er-zhang/si.md)
