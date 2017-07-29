@@ -11,7 +11,7 @@
   * [七、开发重要知识点介绍](di-yi-zhang/qi.md)
 * [第二章 DML](di-er-zhang.md)
   * [一、sqlplus基础命令](di-er-zhang/yi.md)
-  * [二](di-er-zhang/er.md)
+  * [二、](di-er-zhang/er.md)
   * [三](di-er-zhang/san.md)
   * [四](di-er-zhang/si.md)
 
