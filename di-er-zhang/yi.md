@@ -31,7 +31,7 @@
 
    ![](http://opzv089nq.bkt.clouddn.com/17-7-29/8627996.jpg)
 
-1.1.1.3、使用默认方式用sys账户登录Oracle
+##### 1.1.1.3、使用默认方式用sys账户登录Oracle
 
 1. 语法格式
 
@@ -43,7 +43,7 @@
 
    ![](http://opzv089nq.bkt.clouddn.com/17-7-29/12716907.jpg)
 
-1.1.1.4、SQL命令下断开用户连接
+##### 1.1.1.4、SQL命令下断开用户连接
 
 1. 语法
 
@@ -55,19 +55,29 @@
 
    ![](http://opzv089nq.bkt.clouddn.com/17-7-29/39558749.jpg)
 
-1.1.1.5、SQL命令下用户登陆
+##### 1.1.1.5、SQL命令下用户登陆
 
 1. 语法
 
    ```
-   conn 用户名/密码  as  管理员
+   conn 用户名/密码  as  系统管理员
    ```
 
 2. 示例代码
 
    ![](http://opzv089nq.bkt.clouddn.com/17-7-29/84059724.jpg)
 
+1.1.1.5、远程连接数据库
 
+1. 语法
+
+   ```
+   sqlplus 用户名/密码@ip:端口/数据库名 as 系统管理员
+   ```
+
+2. 示例代码
+
+   ![](http://opzv089nq.bkt.clouddn.com/17-7-29/99171094.jpg)
 
 #### 1.1.2、其他命令
 
@@ -90,6 +100,8 @@
 9. SQL&gt; set autocommit ON --设置是否自动提交，默认为OFF
 
 10. SQL&gt;showuser --显示当前用户
+
+    ​
 
   
 
