@@ -8,11 +8,7 @@
 
    [官方网址](http://www.oracle.com/technology/software/products/sql/index.html)
 
-   ```
-
-   ```
-
-3. Navicat Premium \(推荐\)
+1. Navicat Premium \(推荐\)
 
    [官方网址](http://www.navicat.com)
 
