@@ -10,7 +10,9 @@
 
 3. Navicat Premium \(推荐\)
 
-   [官方网址](http://www.navicat.com)说明：个人现在的最爱，软件小巧，速度快捷，是一个集成数据库管理软件，可以管理MySQL、Oracle、PostgreSQL三种数据库。
+   [官方网址](http://www.navicat.com)       
+
+说明：个人现在的最爱，软件小巧，速度快捷，是一个集成数据库管理软件，可以管理MySQL、Oracle、PostgreSQL三种数据库。
 
 ### 7.2、数据库
 
