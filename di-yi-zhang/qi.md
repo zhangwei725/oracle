@@ -16,22 +16,25 @@
 
 3. Navicat Premium \(推荐\)
 
-   ```
+   官方网址:http://www.navicat.com
 
+```
+4.
+```
 
-   ```
+```
+5.
+```
 
-4. ```
-
-   ```
-5. ```
-    说明：个人现在的最爱，软件小巧，速度快捷，是一个集成数据库管理软件，可以管理MySQL、Oracle、PostgreSQL三种数据库。
-   ```
-
+```
+说明：个人现在的最爱，软件小巧，速度快捷，是一个集成数据库管理软件，可以管理MySQL、Oracle、PostgreSQL三种数据库。
 ```
 
 ```
 
+```
+
+```
 ### 7.2、数据库
 
 1. 简介
@@ -49,11 +52,11 @@
    也叫全局数据库，是数据库系统的入口，它会内置一些高级权限的用户如SYS，SYSTEM等。我们用这些高级权限账号登陆就可以在数据库实例中创建表空间，用户，表了。
 
 4. 查询当前数据库名：
+```
 
-   ```
-   select name from v$database;
-   ```
+select name from v$database;
 
+```
 ### 7.3、数据库实例
 
 1. 概要
@@ -65,12 +68,12 @@
    实例名指的是用于响应某个数据库操作的数据库管理系统的名称。她同时也叫SID。实例名是由参数instance\_name决定的
 
 2. 查询当前数据库实例名:就是数据库安装的时候设置的名字默认是orcl
+```
 
-   ```
-   select instance_name from v$instance;
+select instance\_name from v$instance;  
    jdbc:oracle:thin:@localhost:1521:orcl（orcl就为数据库实例名）
-   ```
 
+```
    注:一个数据库可以有多个实例，在作数据库服务集群的时候可以用到
 
 ### 7.4、表空间\(TableSpace\)
@@ -97,30 +100,30 @@
 #### 7.4.4、创建表空间语法
 
 1. 语法
+```
 
-   ```
-   Create TableSpace 表空间名称  
+Create TableSpace 表空间名称  
    DataFile 表空间数据文件路径  
    Size 表空间初始大小  
    Autoextend on 自动扩展
-   ```
 
+```
 2. 示例代码
+```
 
-   ```
-   create tablespace db_test  
-   datafile 'D:\oracle\zhangwei\product\11.2.0\dbhome_1\userdata\db_test.dbf'  
+create tablespace db\_test  
+   datafile 'D:\oracle\zhangwei\product\11.2.0\dbhome\_1\userdata\db\_test.dbf'  
    size 50m  
    autoextend on;
-   ```
 
+```
 3. 查看已经创建好的表空：
+```
 
-   ```
-   select default_tablespace, temporary_tablespace, d.username  
-   from dba_users d
-   ```
+select default\_tablespace, temporary\_tablespace, d.username  
+   from dba\_users d
 
+```
 ### 7.5、Oracle用户
 
 #### 7.5.1、概要
@@ -132,39 +135,39 @@
 #### 7.5.2、创建用户
 
 1. 语法
+```
 
-   ```
-   CREATE USER 
+CREATE USER   
      用户名  
-   IDENTIFIED BY 
+   IDENTIFIED BY   
      密码  
-   DEFAULT TABLESPACE 
-    表空间(默认USERS)  
-   TEMPORARY TABLESPACE 临时表空间(默认TEMP)
-   ```
+   DEFAULT TABLESPACE   
+    表空间\(默认USERS\)  
+   TEMPORARY TABLESPACE 临时表空间\(默认TEMP\)
 
+```
 2. 示例代码：
+```
 
-   ```
-   CREATE USER test  
+CREATE USER test  
    IDENTIFIED BY 123  
-   DEFAULT TABLESPACE db_test  
+   DEFAULT TABLESPACE db\_test  
    TEMPORARY TABLESPACE temp;
-   ```
 
+```
 3. 有了用户，要想使用用户账号管理自己的表空间，还得给它分权限：
+```
 
-   ```
-   GRANT CONNECT TO test;  
+GRANT CONNECT TO test;  
    GRANT RESOURCE TO test;  
    GRANT dba TO test;--dba为最高级权限，可以创建数据库，表等。
-   ```
 
+```
 4. 查看数据库用户：
+```
 
-   ```
-   select  * from dba_users;
-   ```
+select  \* from dba\_users;  
+   \`\`\`
 
 ### 7.6、表
 
