@@ -83,7 +83,7 @@
 
 1. SQL&gt; set linesize 1000 --设置屏幕显示行宽，默认100
 
-2. SQL&gt; set pagesize 0; //输出每页行数，缺省为24,为了避免分页，可设定为
+2. SQL&gt; set pagesize 100; //输出每页行数，缺省为24,为了避免分页，可设定为
 
 3. SQL&gt; @ d:\sql\test.sql --执行sql文件
 
