@@ -785,32 +785,28 @@ Oracle数据库建好后，要想在数据库里建表，必须先为数据库�
 3. SET TRANSACTION
 
 
-       ```
+
+1、作用
 
 ```
-
-
-   1、作用
-```
-
 设置事务
-
-```
-   2、作用
 ```
 
+2、作用
+
+```
 111
-
-```
-   1. 事务操作步骤
 ```
 
-      set  autocomit=false;设置手动提交；
-      rollback 回滚；
-      commit 提交；
-      savepoint  pl 保存；
-      rollback to pl 回滚到pl点
-      ```
+1. 事务操作步骤
+
+   ```
+   set  autocomit=false;设置手动提交；
+   rollback 回滚；
+   commit 提交；
+   savepoint  pl 保存；
+   rollback to pl 回滚到pl点
+   ```
 
 ##### 7.2.4.3、操作对象\(事务\)
 
