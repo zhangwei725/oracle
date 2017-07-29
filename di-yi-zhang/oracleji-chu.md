@@ -304,7 +304,7 @@ PGA （ Program Global Area 程序全局区）是一块包含一个服务进程�
 
 ![](http://opzv089nq.bkt.clouddn.com/17-7-29/86611471.jpg)
 
-## 六、SQL
+## 六、数据库常用对象
 
 ## 七、
 
