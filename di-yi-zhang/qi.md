@@ -1,6 +1,6 @@
 ## 七、开发重要知识点介绍
 
-### 6.1、Oracle开发工具
+### 7.1、Oracle开发工具
 
 1. SQL\*Plus\(前期学习用,开发中不用\)
 
@@ -133,7 +133,7 @@
    CREATE USER test  
    IDENTIFIED BY 123  
    DEFAULT TABLESPACE db_test  
-   TEMPORARY TABLESPACE temp; 
+   TEMPORARY TABLESPACE temp;
    ```
 
 3. 有了用户，要想使用用户账号管理自己的表空间，还得给它分权限：
