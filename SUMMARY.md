@@ -2,7 +2,7 @@
 
 * [前言](README.md)
 * [第一章 简介](di-yi-zhang.md)
-  * [一、oracle基础](di-yi-zhang/oracleji-chu.md)
+  * [一、Oracle基础](di-yi-zhang/oracleji-chu.md)
   * [二、ORACLE发展史\(了解\)](di-yi-zhang/er-3001-oracle-fa-zhan-53f228-le-89e329.md)
   * [三、](di-yi-zhang/san.md)
   * [四、Oracle的安装与卸载](di-yi-zhang/si.md)
