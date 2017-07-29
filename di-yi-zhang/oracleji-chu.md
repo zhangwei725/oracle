@@ -527,12 +527,9 @@ Oracle数据库建好后，要想在数据库里建表，必须先为数据库�
 1. 语法
 
    ```
-   CREATE USER 
-     用户名  
-   IDENTIFIED BY 
-     密码  
-   DEFAULT TABLESPACE 
-    表空间(默认USERS)  
+   CREATE USER 用户名  
+   IDENTIFIED BY 密码  
+   DEFAULT TABLESPACE 表空间(默认USERS)  
    TEMPORARY TABLESPACE 临时表空间(默认TEMP)
    ```
 
