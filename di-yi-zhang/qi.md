@@ -83,9 +83,7 @@
    ```
    Create TableSpace 表空间名称  
    DataFile 表空间数据文件路径  
-  
    Size 表空间初始大小  
-  
    Autoextend on 自动扩展
    ```
 
