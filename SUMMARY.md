@@ -11,7 +11,7 @@
   * [七、开发重要知识点介绍](di-yi-zhang/qi.md)
 * [第二章DML](di-er-zhang.md)
   * [一](di-er-zhang/yi.md)
-  * 二
+  * [二](di-er-zhang/er.md)
   * 三
   * 四
 
