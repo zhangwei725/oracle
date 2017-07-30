@@ -110,9 +110,7 @@ FROM 表名称 [别名]
    ```
    SELECT ename ,sal 
    FROM emp
-   WHERE sal
-   >
-   =3000;
+   WHERE sal>=3000;
    ```
 
 ### 3.3.2、逻辑运算\(AND OR\)
