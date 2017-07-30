@@ -235,7 +235,8 @@ FROM 表名称 [别名] ;                                       --1、 确定查
 
    ```
    查询当前系统的时间
-   select 'sysdate' from dual;
+   select 'sysdate' 
+   from dual;
    ```
 
 3. 不受标识符规则限制
@@ -243,7 +244,8 @@ FROM 表名称 [别名] ;                                       --1、 确定查
 4. 会被当成一个列来处理,当出现在to\_char的格式字符串中时，双引号有特殊的作用，就是将非法的格式符包装起来, 避免出现ORA-01821: date format not recognized错误， to\_char在处理格式字符串时，会忽略双引号
 
    ```
-    select to_char(sysdate, 'hh24"小时"mi"分"ss"秒"') AS RESULT from dual
+    select to_char(sysdate, 'hh24"小时"mi"分"ss"秒"') AS RESULT 
+    from dual
    ```
 
    ![](http://opzv089nq.bkt.clouddn.com/17-7-30/80442625.jpg)
