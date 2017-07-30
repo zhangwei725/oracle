@@ -12,8 +12,8 @@
 * [第二章 DML](di-er-zhang.md)
   * [一、SQL Plus基础命令](di-er-zhang/yi.md)
   * [二、简单查询\(控制列\)](di-er-zhang/er.md)
+  * [四、排序](di-er-zhang/si.md)
   * [三、限定查询\(控制行\)](di-er-zhang/san.md)
-* [四、排序](di-er-zhang/si.md)
 * [第三章 进阶](di-san-zhang.md)
   * [一、函数查询](di-san-zhang/yi.md)
   * 二
