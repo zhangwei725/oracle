@@ -273,8 +273,8 @@ FROM 表名称 [别名]
    LIKE子句的功能是提供了模糊查找的操作,程序里出现的搜索操作，都属于LIKE子句的实现,但是要想使用LIKE子句则必须认识两个匹配符号
 
    ```
-   匹配单个字符：_ 
-    --匹配任意一个字符
+   匹配单个字符：_ --匹配任意一个字符
+
    匹配任意多个字符：% --匹配 0 个、1 个或多个任意字符
    ```
 
@@ -296,55 +296,40 @@ FROM 表名称 [别名]
 
    2、查询出雇员姓名以字母“S”开头的雇员信息
 
-   ```
-   SELECT * 
-   FROM emp 
+   \`\`\`  
+   SELECT \*   
+   FROM emp   
    WHERE ename like 'S%'
 
-
-
-
-   ```
-
+```
    3、查询出雇员姓名包含字母“S”的雇员信息
+```
 
-   ```
-   SELECT * 
-   FROM emp 
+SELECT \*   
+   FROM emp   
    WHERE ename like '%S%'
 
-
-
-
-   ```
-
+```
    4、查询入职年份为81年的雇员信息
+```
 
-   ```
-   SELECT * 
-   FROM emp 
+SELECT \*   
+   FROM emp   
    WHERE hiredate like '%81'
 
-
-
-
-   ```
-
+```
    5、查询工资值中包含数字5的雇员信息
+```
 
-   ```
-   SELECT * 
-   FROM emp 
+SELECT \*   
+   FROM emp   
    WHERE sal like '%5%'
 
-
-
-
-   ```
-
-   ​
+\`\`\`
 
 ​
 
-​ 
+​
+
+​
 
