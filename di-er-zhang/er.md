@@ -197,7 +197,7 @@ FROM 表名称 [别名] ;                                       --1、 确定查
    FROM emp;
    ```
 
-   ![](file:///Users/zhangwei/Desktop/字符串常量.png?lastModify=1501394015)
+   ![](http://opzv089nq.bkt.clouddn.com/17-7-30/63240825.jpg)
 
 3. 结合连接符,查询 empno 员工编码,ename 员工姓名,sal 员工工资,要求显示在一起,每行前面加上常量格式如下
 
