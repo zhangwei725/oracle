@@ -2,13 +2,13 @@
 
 ## 4.1、概要
 
-​	函数是一种有零个或多个参数并且有一个返回值的程序,函数主要分为两大类单行函数,多行函数(聚合函数)
+​    函数是一种有零个或多个参数并且有一个返回值的程序,函数主要分为两大类单行函数,多行函数\(聚合函数\)
 
 ## 4.2、单行函数
 
 ### 4.2.1、定义
 
-​	单行函数: 对每一个函数应用在表的记录中时，只能输入一行结果，返回一个结果。
+​    单行函数: 对每一个函数应用在表的记录中时，只能输入一行结果，返回一个结果。
 
 ### 4.2.2、分类
 
@@ -95,7 +95,7 @@
 
 3. 示例代码
 
-   使用字母'*'替换掉姓名中的所有字母's'
+   使用字母'\*'替换掉姓名中的所有字母's'
 
    ```
    SELECT REPLACE(ename,'S','*') FROM emp
@@ -257,7 +257,7 @@
 
 ### 4.2.5、日期函数
 
-#### 4.2.5.1、MONTHS_BETWEEN
+#### 4.2.5.1、MONTHS\_BETWEEN
 
 1. 说明
 
@@ -278,7 +278,7 @@
    1
    ```
 
-#### 4.2.5.2、ADD_MONTHS
+#### 4.2.5.2、ADD\_MONTHS
 
 1. 说明
 
@@ -298,7 +298,7 @@
    SELECT SYSDATE ,ADD_MONTHS(SYSDATE ,1) FROM DUAL;
    ```
 
-#### 4.2.5.3、LAST_DAY
+#### 4.2.5.3、LAST\_DAY
 
 1. 说明
 
@@ -322,7 +322,7 @@
 
 转换函数将值从一种数据类型转换为另外一种数据类型
 
-#### 4.2.6.1、TO_CHAR
+#### 4.2.6.1、TO\_CHAR
 
 1. 说明
 
@@ -348,7 +348,7 @@
    SELECT to_char(sysdate,'yyyy') FROM dual;
    ```
 
-#### 4.2.6.2、TO_DATE
+#### 4.2.6.2、TO\_DATE
 
 1. 说明
 
@@ -378,7 +378,7 @@
    2015-12-25 13:25:59
    ```
 
-   #### 4.2.6.3、TO_NUMBER(字符串)
+   #### 4.2.6.3、TO\_NUMBER\(字符串\)
 
 ### 4.2.7、通用函数
 
@@ -470,7 +470,7 @@
    类似我们的swich语句根据条件返回相应的结构,Case函数只返回第一个符合条件的值，剩下的Case部分将会被自动忽略
    ```
 
-2. 语法格式一(简单Case函数)
+2. 语法格式一\(简单Case函数\)
 
    ```
    CASE 条件
@@ -484,7 +484,7 @@
    END  [别名]
    ```
 
-3. 语法二(Case搜索函数)
+3. 语法二\(Case搜索函数\)
 
    ```
    CASE  
@@ -493,7 +493,7 @@
    　　...  
    　　WHEN condistionN THEN resultN  
    　　ELSE default_result  
-   END  
+   END
    ```
 
    ​
@@ -518,16 +518,18 @@
 
    ```
    SELECT  ENAME  ,
-   	CASE   
-   	WHEN sal> 700 AND sal <= 1200  THEN '1'   
-   	WHEN sal > 1201 AND sal <= 1400  THEN '2'   
-   	WHEN sal > 1401 AND sal <= 2000 THEN '3'  
-   	WHEN sal > 2001 AND sal <= 3000 THEN '4'  
-   	WHEN sal > 3001 AND sal <= 9999 THEN '5'  
+       CASE   
+       WHEN sal> 700 AND sal <= 1200  THEN '1'   
+       WHEN sal > 1201 AND sal <= 1400  THEN '2'   
+       WHEN sal > 1401 AND sal <= 2000 THEN '3'  
+       WHEN sal > 2001 AND sal <= 3000 THEN '4'  
+       WHEN sal > 3001 AND sal <= 9999 THEN '5'  
      ELSE '0'
      END grade -- 别名命名
    FROM EMP
    ```
 
    ​
+
+
 
