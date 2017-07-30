@@ -64,20 +64,8 @@
 #### 3.1.1、语法格式
 
 ```
-SELECT
- [
-DISTINCT
-] * | 列名 [
-AS
-] [别名] ,列名 [
-AS
-] [别名] , 
-2
-、 控制要显示的数据列
-FROM
- 表名称 [别名] ; 
-1
-、 确定查询的数据来源
+SELECT [DISTINCT] * | 列名 [AS] [别名] ,列名 [AS] [别名] , 2、 控制要显示的数据列
+FROM 表名称 [别名] ;   					    1、 确定查询的数据来源	、 确定查询的数据来源
 ```
 
 #### 3.1.2、参数说明
@@ -114,7 +102,7 @@ FROM
 
    ```
     SELECT empno 编号,ename 姓名,job 职位,sal 薪资 
-    FROM emp;  
+    FROM emp;
    ```
 
 ![](http://ojx4zwltq.bkt.clouddn.com/17-3-19/72398330-file_1489905740070_14235.png)
@@ -212,7 +200,7 @@ FROM
    FROM emp;
    ```
 
-   ![](file:///Users/zhangwei/Desktop/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%B8%B8%E9%87%8F.png?lastModify=1501394015)
+   ![](file:///Users/zhangwei/Desktop/字符串常量.png?lastModify=1501394015)
 
 3. 结合连接符,查询 empno 员工编码,ename 员工姓名,sal 员工工资,要求显示在一起,每行前面加上常量格式如下
 
@@ -263,6 +251,5 @@ FROM
 
    ![](http://opzv089nq.bkt.clouddn.com/17-7-30/80442625.jpg)
 
-  
 
 
