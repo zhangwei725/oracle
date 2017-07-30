@@ -150,12 +150,7 @@ FROM 表名称 [别名]
 
    3、查询出职位是办事员\(job='CLERK'\)，或者是销售人员\(job='SALESMAN'\)的全部信息，并且要求这些雇员的工资大于1200
 
-   \`\`\`  
-   SELECT \*  
-   FROM emp  
-   WHERE \(job='CLERK' OR job='SALESMAN'\) AND sal&gt;1200;
-
-\`\`\`
+  
 
 ```
 ### 3.3.3、范围判断\(BETWEEN AND\)
