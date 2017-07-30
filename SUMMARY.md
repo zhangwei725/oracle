@@ -14,5 +14,5 @@
   * [二、简单查询](di-er-zhang/er.md)
   * [三、限定查询](di-er-zhang/san.md)
   * 四
-* 第三章
+* [第三章](di-san-zhang.md)
 
