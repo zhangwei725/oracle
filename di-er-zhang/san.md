@@ -42,7 +42,7 @@
     NOT IN
    ```
 
-1. 模糊查询
+5. 模糊查询
 
    ```
    LIKE
@@ -174,9 +174,10 @@ FROM 表名称 [别名]
    ```
    SELECT * 
    FROM emp
-   WHERE (job='CLERK' OR job='SALESMAN') AND sal
-   >
-   1200;
+   WHERE (job='CLERK' OR job='SALESMAN') AND sal>1200;
+
+
+
    ```
 
 ### 3.3.3、范围判断\(BETWEEN AND\)
@@ -212,7 +213,7 @@ FROM 表名称 [别名]
    FROM emp
    WHERE hiredate 
    BETWEEN date '1985-01-01' 
-   AND date '1985-05-20';  
+   AND date '1985-05-20';
    ```
 
 ### 3.3.4、判断是否为空\(IS \[NOT\] NULL\)
@@ -270,7 +271,7 @@ FROM 表名称 [别名]
    ```
    SELECT * 
    FROM emp 
-   WHERE ename in ('SMITH','ALLEN', 'KING');  
+   WHERE ename in ('SMITH','ALLEN', 'KING');
    ```
 
    3、查询出雇员编号不是7369、7566、7799的雇员信息
@@ -322,7 +323,7 @@ FROM 表名称 [别名]
    ```
    select * 
    from emp 
-   WHERE ename like '_L%';  
+   WHERE ename like '_L%';
    ```
 
    2、查询出雇员姓名以字母“S”开头的雇员信息
