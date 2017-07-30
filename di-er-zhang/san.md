@@ -301,26 +301,32 @@ FROM 表名称 [别名]
    FROM emp  
    WHERE ename like 'S%'
 
-```
-   3、查询出雇员姓名包含字母“S”的雇员信息
+      3、查询出雇员姓名包含字母“S”的雇员信息
+
 ```
 
-SELECT \*  
-   FROM emp  
+   SELECT *
+   FROM emp
    WHERE ename like '%S%'
 
 ```
-   4、查询入职年份为81年的雇员信息
+
+4、查询入职年份为81年的雇员信息
+
+```
+  
 ```
 
 SELECT \*  
    FROM emp  
    WHERE hiredate like '%81'
 
-    5、查询工资值中包含数字5的雇员信息
+```
+5、查询工资值中包含数字5的雇员信息
+```
 
 ```
- 
+
 ```
 
 SELECT \*  
