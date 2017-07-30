@@ -11,8 +11,8 @@
   * [七、开发重要知识点介绍](di-yi-zhang/qi.md)
 * [第二章 DML](di-er-zhang.md)
   * [一、SQL Plus基础命令](di-er-zhang/yi.md)
-  * [二、简单查询](di-er-zhang/er.md)
-  * [三、限定查询](di-er-zhang/san.md)
-  * 四
+  * [二、简单查询\(控制列\)](di-er-zhang/er.md)
+  * [三、限定查询\(控制行\)](di-er-zhang/san.md)
+  * [四、排序](di-er-zhang/si.md)
 * [第三章](di-san-zhang.md)
 
