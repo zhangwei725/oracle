@@ -103,7 +103,7 @@ FROM 表名称 [别名] ;                                       --1、 确定查
     FROM emp;
    ```
 
-![](http://ojx4zwltq.bkt.clouddn.com/17-3-19/72398330-file_1489905740070_14235.png)
+        
 
 1. 去掉重复数据
 
