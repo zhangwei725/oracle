@@ -88,6 +88,7 @@ FROM 表名称 [别名] ;                                       --1、 确定查
    ```
 
 2. 查询每个雇员\(emp\)的编号\(empno\)、姓名\(ename\)、职位\(job\)、基本工资\(sal\)
+
    ```
    SELECT empno,ename,job,sal 
    FROM emp;
