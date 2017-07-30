@@ -298,9 +298,7 @@ FROM 表名称 [别名]
    FROM emp  
    WHERE ename like 'S%'
 
-```
-   3、查询出雇员姓名包含字母“S”的雇员信息
-```
+       3、查询出雇员姓名包含字母“S”的雇员信息
 
 SELECT \*  
    FROM emp  
