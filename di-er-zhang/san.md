@@ -155,6 +155,8 @@ FROM 表名称 [别名]
    FROM emp  
    WHERE \(job='CLERK' OR job='SALESMAN'\) AND sal&gt;1200;
 
+\`\`\`
+
 ```
 ### 3.3.3、范围判断\(BETWEEN AND\)
 
