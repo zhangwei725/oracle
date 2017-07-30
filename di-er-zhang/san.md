@@ -317,8 +317,10 @@ SELECT \*
    FROM emp  
    WHERE hiredate like '%81'
 
+    5、查询工资值中包含数字5的雇员信息
+
 ```
-   5、查询工资值中包含数字5的雇员信息
+ 
 ```
 
 SELECT \*  
