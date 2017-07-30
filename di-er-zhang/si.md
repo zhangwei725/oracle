@@ -69,4 +69,30 @@ FROM 表名称 [别名]             		           --1、确定数据来源
    ORDER BY income ;
    ```
 
+   5、根据deptno降序排列
+
+   ```
+   SELECT * 
+   FROM emp 
+   ORDER BY deptno DESC;
+   ```
+
+   6、根据empno升序排列
+
+   ```
+   SELECT * 
+   FROM emp 
+   ORDER BY empno;
+   ```
+
+   7、查询部门为30是所有员工的年薪按降序排序(使用列编号排序)
+
+   ```
+   SELECT ename,sal*12 
+   FROM emp 
+   WHERE deptno=20 
+   ORDER BY 2 DESC
+
+   ```
+
    ​
