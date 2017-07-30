@@ -192,7 +192,7 @@ FROM 表名称 [别名]
    SELECT * 
    FROM emp
    WHERE comm IS NOT NULL;
-   ​
+
    SELECT * 
    FROM emp
    WHERE NOT comm IS NULL;
@@ -258,7 +258,7 @@ FROM 表名称 [别名]
    SELECT * FROM emp WHERE empno IN(7369,7566,null);
    如果现在使用的是NOT IN操作符，如果查询范围之中有了null则表示的就是查询全部数据。
    SELECT * FROM emp WHERE empno NOT IN(7369,7566,null);
-   ​
+
    empno in (7369,7566,null)可以等价于empno=7369 or empno=7566 or empno=null，
    empno not in (7369,7566,null)可以等价于not(7566=7369 or 7566=7566 or empno=null)
    或empno!=7566 and empno!=7566 and empno=null。
@@ -273,7 +273,8 @@ FROM 表名称 [别名]
    LIKE子句的功能是提供了模糊查找的操作,程序里出现的搜索操作，都属于LIKE子句的实现,但是要想使用LIKE子句则必须认识两个匹配符号
 
    ```
-   匹配单个字符：_ --匹配任意一个字符
+   匹配单个字符：_ 
+    --匹配任意一个字符
    匹配任意多个字符：% --匹配 0 个、1 个或多个任意字符
    ```
 
@@ -293,36 +294,39 @@ FROM 表名称 [别名]
    WHERE ename like '_L%';
    ```
 
-   2、查询出雇员姓名以字母“S”开头的雇员信息  
-   SELECT \*  
-   FROM emp  
+   2、查询出雇员姓名以字母“S”开头的雇员信息
+
+   ```
+   SELECT * 
+   FROM emp 
    WHERE ename like 'S%'
+   ```
 
-       3、查询出雇员姓名包含字母“S”的雇员信息
+   3、查询出雇员姓名包含字母“S”的雇员信息
 
-SELECT \*  
-   FROM emp  
+   ```
+   SELECT * 
+   FROM emp 
    WHERE ename like '%S%'
+   ```
 
-```
    4、查询入职年份为81年的雇员信息
-```
 
-SELECT \*  
-   FROM emp  
+   ```
+   SELECT * 
+   FROM emp 
    WHERE hiredate like '%81'
+   ```
 
-```
    5、查询工资值中包含数字5的雇员信息
-```
 
-SELECT \*  
-   FROM emp  
+   ```
+   SELECT * 
+   FROM emp 
    WHERE sal like '%5%'
+   ```
 
-\`\`\`
-
-​
+   ​
 
 ​
 
