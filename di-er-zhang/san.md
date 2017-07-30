@@ -91,9 +91,7 @@ FROM 表名称 [别名]
    ```
    SELECT * 
    FROM emp 
-   WHERE sal 
-   <
-   = 1500
+   WHERE sal <= 1500;
    ```
 
 2. ​
@@ -104,11 +102,7 @@ FROM 表名称 [别名]
 
    ```
    SELECT * 
-   FROM 
-    emp
-   WHERE  comm
-   >
-   sal;
+   FROM  empWHERE comm>sal;
    ```
 
 2. 找出工资大于或等于3000的员工
