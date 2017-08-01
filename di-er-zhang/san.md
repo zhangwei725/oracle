@@ -94,7 +94,6 @@ FROM 表名称 [别名]
    WHERE sal <= 1500;
    ```
 
-2. ​
 
 #### 3.3.1.3、大于**&gt;**、 大于等于**&gt;=**
 
@@ -176,7 +175,7 @@ FROM 表名称 [别名]
    SELECT * 
    FROM emp
    WHERE hiredate BETWEEN  '20-1月 -85' AND '20-5月 -87';
-   ​
+
    SELECT *
    FROM emp
    WHERE hiredate 
@@ -326,9 +325,17 @@ FROM 表名称 [别名]
    WHERE sal like '%5%'
    ```
 
-   ​6、查询所有员工中ename 包含S ,或者入职日期中包含数字1或者工资中含有数字5
+   6、查询所有员工中ename 包含S ,或者入职日期中包含数字1或者工资中含有数字5
 
-​3.3.7、总结
+   ```
+   SELECT * 
+   FROM emp 
+   WHERE ename LIKE '%S%' OR hiredate LIKE '%1%' OR sal LIKE '%5%'
+   ```
+
+   ​
+
+3.3.7、总结
 
 1. 作用：对SQL语句返回的数据集进行筛选
 
