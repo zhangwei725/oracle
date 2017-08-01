@@ -17,6 +17,7 @@
 * [第三章 进阶](di-san-zhang.md)
   * [一、单行函数查询](di-san-zhang/yi.md)
   * [二、多表查询](di-san-zhang/er.md)
-  * [三、分组统计查询](di-san-zhang/san.md)
-  * [四、子查询](di-san-zhang/si.md)
+  * [三、多表查询2](di-san-zhang/san.md)
+  * [四、分组查询](di-san-zhang/si.md)
+  * [子查询](di-san-zhang/zi-cha-xun.md)
 
