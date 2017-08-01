@@ -10,7 +10,7 @@
 | :--- | :---: | :---: |
 | MAX\(DISTINCT\|ALL 列\) | 数值 | 对所有数值求和 |
 | COUNT\(\[DISTINCT\|ALL\] 列\);或者COUNT\(\*\); | 数值 | 求非空的记录、数据个数 |
-| MAX\(\[DISTINCT\|ALL 列\] 数值日期列\); | 数值 | 求最大值 |
+| MAX\(\[DISTINCT\|ALL\] 数值日期列\); | 数值 | 求最大值 |
 | MIN\(\[DISTINCT\|ALL\] 数值日期列\); | 数值 | 求最小值 |
 | AVG\(\[DISTINCT\|ALL\] 数值列\); | 数值 | 求平均值 |
 
