@@ -18,7 +18,6 @@
   * [一、单行函数查询](di-san-zhang/yi.md)
   * [二、多表查询](di-san-zhang/er.md)
   * [三、多表查询2](di-san-zhang/san.md)
-  * [四、分组查询](di-san-zhang/si.md)
-  * [五、子查询](di-san-zhang/wu.md)
-
+  * [四、分组函数](di-san-zhang/si.md)
+  * [五、分组查询](di-san-zhang/wu.md)
 
