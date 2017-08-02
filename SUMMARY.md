@@ -20,6 +20,7 @@
   * [三、多表查询2](di-san-zhang/san.md)
   * [四、分组函数](di-san-zhang/si.md)
   * [五、分组查询](di-san-zhang/wu.md)
+  * 六
 * [第四章 DML](di-si-zhang-dml.md)
   * 一
   * 二
