@@ -26,6 +26,6 @@
   * 二
   * 三
   * 四
-* 第五章 其他
+* [第五章 其他](di-wu-zhang-qi-ta.md)
 * [练习](lian-xi.md)
 
