@@ -285,7 +285,7 @@ FROM 表名称 [别名], [表名称 [别名] ,…] ,(
    ```
    SELECT empno, ename, job, deptno
    FROM emp e
-   WHERE EXISTS (SELECT 'X'
+   WHERE EXISTS (SELECT *
    			 FROM emp
    			 WHERE  mgr =  e.empno);
    ```
