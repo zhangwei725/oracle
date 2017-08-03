@@ -28,6 +28,6 @@
   * [四](di-si-zhang-dml/si.md)
 * [第五章 其他](di-wu-zhang-qi-ta.md)
   * [多表查询连接类型](di-wu-zhang-qi-ta/lian-jie-lei-xing.md)
-  * 优化总结
+  * [优化总结](di-wu-zhang-qi-ta/you-hua-zong-jie.md)
 * [练习题](lian-xi.md)
 
