@@ -1,6 +1,6 @@
 1.SELECT子句中避免使用 ‘ \* ‘
 
-\(2\)：使用exists语句代替in语句
+2.使用exists语句代替in语句
 
 \(3\):   使用not exists代替not in
 
