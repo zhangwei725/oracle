@@ -22,11 +22,12 @@
   * [五、分组查询](di-san-zhang/wu.md)
   * [六、子查询](di-san-zhang/liu.md)
 * [第四章 DML](di-si-zhang-dml.md)
-  * 一
-  * 二
-  * 三
-  * 四
+  * [一](di-si-zhang-dml/yi.md)
+  * [二](di-si-zhang-dml/er.md)
+  * [三](di-si-zhang-dml/san.md)
+  * [四](di-si-zhang-dml/si.md)
 * [第五章 其他](di-wu-zhang-qi-ta.md)
   * [多表查询连接类型](di-wu-zhang-qi-ta/lian-jie-lei-xing.md)
+  * 优化总结
 * [练习题](lian-xi.md)
 
