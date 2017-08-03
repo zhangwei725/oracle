@@ -4,7 +4,7 @@
 
 3.使用not exists代替not in
 
-\(4\)：使用truncate代替delete from 表语句
+4.使用truncate代替delete from 表语句
 
 \(5\)：减少访问数据库的次数
 
