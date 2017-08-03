@@ -27,5 +27,6 @@
   * 三
   * 四
 * [第五章 其他](di-wu-zhang-qi-ta.md)
+  * [多表查询连接类型](di-wu-zhang-qi-ta/lian-jie-lei-xing.md)
 * [练习](lian-xi.md)
 
