@@ -2,7 +2,7 @@
 
 2.使用exists语句代替in语句
 
-\(3\):   使用not exists代替not in
+3.使用not exists代替not in
 
 \(4\)：使用truncate代替delete from 表语句
 
