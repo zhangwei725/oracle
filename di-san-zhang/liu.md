@@ -1,5 +1,3 @@
-
-
 ## 三、子查询
 
 ### 1.1、定义
@@ -207,7 +205,7 @@ FROM 表名称 [别名], [表名称 [别名] ,…] ,(
 
 1. 查询各个职位中工资最高的员工信息(子查询是分组查询)
 
-   ```
+   ```mysql
    SELECT ename, job, sal 
    FROM emp 
    WHERE sal in (SELECT max(sal) 
@@ -217,7 +215,7 @@ FROM 表名称 [别名], [表名称 [别名] ,…] ,(
 
 2. 查询员工工资跟管理部相同的员工工资
 
-   ```
+   ```mysql
    SELECT * 
    FROM emp 
    WHERE sal IN (SELECT sal 
@@ -235,8 +233,26 @@ FROM 表名称 [别名], [表名称 [别名] ,…] ,(
 
 2、示例代码
 
-1. ​
-2. ​
+1. 查询工资高于任何部门的平均工资的员工信息
+
+   ```mysql
+   select * 
+   from emp 
+   where sal>any(select avg(sal) 
+   			 from emp group by deptno)
+   ```
+
+2.  询工资低于任何部门的平均工资的员工信息(使用<any)
+
+   ```mysql
+   select * 
+   from emp 
+   where sal < any (select min(sal) 
+   				from emp 
+   				group by deptno);
+   ```
+
+   ​
 
 ##### 1.6.3.3、ALL
 
@@ -289,6 +305,8 @@ FROM 表名称 [别名], [表名称 [别名] ,…] ,(
    			 FROM emp
    			 WHERE  mgr =  e.empno);
    ```
+
+   ​
 
 #### 1.6.4、子查询返回单行多列
 
@@ -399,11 +417,9 @@ FROM 表名称 [别名], [表名称 [别名] ,…] ,(
 
 ### 1.8、在 HAVING 子句之中使用子查询
 
-#### 1.8.1、说明
+如果使用了 HAVING 子句一定意味着进行了分组，而且进行了统计查询。在 HAVING 之中出现的子查询只能够返回 单行单列的数据
 
-​	如果使用了 HAVING 子句一定意味着进行了分组，而且进行了统计查询。在 HAVING 之中出现的子查询只能够返回 单行单列的数据
-
-#### 1.8.2、示例代码
+### 示例代码
 
 1. 查询出高于公司平均工资的部门编号、平均工资 
 
@@ -473,55 +489,57 @@ FROM 表名称 [别名], [表名称 [别名] ,…] ,(
 
    2、查询最低收入者的姓名
 
-   ```
-    SELECT e.ename 
-      FROM emp e, (SELECT deptno, 
-                          count(*), 
-                          avg(sal), 
-                          min(sal) min_sal, 
-                          max(sal) max_sal 
-              	FROM emp 
-            		GROUP BY deptno) t 
-      WHERE e.sal = t.min_sal;
-   ```
+```
+   SELECT e.ename 
+   FROM emp e, (SELECT deptno, 
+                       count(*), 
+                       avg(sal), 
+                       min(sal) min_sal, 
+                       max(sal) max_sal 
+           	FROM emp 
+         		GROUP BY deptno) t 
+   WHERE e.sal = t.min_sal;
+```
 
-    3、查询最高收入者的姓名
+   3、查询最高收入者的姓名
 
-   ```
-      SELECT e.ename 
-      FROM emp e, (SELECT deptno, 
-                          count(*), 
-                          avg(sal), 
-                          min(sal) min_sal, 
-                          max(sal) max_sal 
-              	FROM emp 
-            		GROUP BY deptno) t 
-      WHERE e.sal = t.min_sal;
-   ```
+```
+   SELECT e.ename 
+   FROM emp e, (SELECT deptno, 
+                       count(*), 
+                       avg(sal), 
+                       min(sal) min_sal, 
+                       max(sal) max_sal 
+           	FROM emp 
+         		GROUP BY deptno) t 
+   WHERE e.sal = t.min_sal;
+```
 
-    4、跟第一次查询出来的部门最高收入和最低收入同时关联两张emp 表，分别获取最高收入者和最高收入者的姓名
+   4、跟第一次查询出来的部门最高收入和最低收入同时关联两张emp 表，分别获取最高收入者和最高收入者的姓名
 
-   ```
+```
    SELECT DEPT.DNAME 部门名称,
-             TEMP.C  人数,
-             TEMP.A  平均工资,
-             TEMP.M  最低工资,
-             TEMP.MS  最高工资,
-             E.ENAME  最低工资人,
-             DD.ENAME 最高工资人
-      FROM (SELECT DEPTNO, 
-          		COUNT(*) C, 
-          		AVG(SAL) A, 
-          		MIN(SAL) M, 
-          		MAX(SAL) MS
-             FROM EMP
-             GROUP BY DEPTNO) TEMP,
-             DEPT,
-             EMP E,
-             EMP DD
-      WHERE TEMP.DEPTNO = DEPT.DEPTNO
-             AND E.SAL = TEMP.M
-             AND E.DEPTNO = TEMP.DEPTNO
-             AND DD.SAL = TEMP.MS
-             AND DD.DEPTNO = TEMP.DEPTNO
-   ```
+          TEMP.C  人数,
+          TEMP.A  平均工资,
+          TEMP.M  最低工资,
+          TEMP.MS  最高工资,
+          E.ENAME  最低工资人,
+          DD.ENAME 最高工资人
+   FROM (SELECT DEPTNO, 
+       		COUNT(*) C, 
+       		AVG(SAL) A, 
+       		MIN(SAL) M, 
+       		MAX(SAL) MS
+          FROM EMP
+          GROUP BY DEPTNO) TEMP,
+          DEPT,
+          EMP E,
+          EMP DD
+   WHERE TEMP.DEPTNO = DEPT.DEPTNO
+          AND E.SAL = TEMP.M
+          AND E.DEPTNO = TEMP.DEPTNO
+          AND DD.SAL = TEMP.MS
+          AND DD.DEPTNO = TEMP.DEPTNO
+```
+
+   ​
