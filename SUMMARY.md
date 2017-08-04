@@ -22,7 +22,7 @@
   * [五、分组查询](di-san-zhang/wu.md)
   * [六、子查询](di-san-zhang/liu.md)
   * [七、分页查询](di-san-zhang/qi.md)
-  * 八
+  * [八](di-san-zhang/ba.md)
 * [第四章 DML](di-si-zhang-dml.md)
   * [一、数据类型](di-si-zhang-dml/yi.md)
   * [二、约束](di-si-zhang-dml/er.md)
