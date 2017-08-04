@@ -1,24 +1,24 @@
-## 三、子查询
+## 子查询
 
 ### 1.1、定义
 
 1. 指嵌入在其他sql语句中的select语句
 2. 通俗的来讲指的是在一个查询之中嵌入若干个小的查询
-3. 子查询可以出现在查询语句的(9i中除ORDER  BY语句)任意位置上，但是实际开发运用中，子查询出现在WHERE和FROM子句之中较多。
+3. 子查询可以出现在查询语句的\(9i中除ORDER  BY语句\)任意位置上，但是实际开发运用中，子查询出现在WHERE和FROM子句之中较多。
 
 ### 1.2 、核心作用
 
-​	子查询的出现主要是为了解决多表查询之中的性能问题。
+​    子查询的出现主要是为了解决多表查询之中的性能问题。
 
 ### 1.3 、分类
 
-1. 嵌套查询(标准子查询)
+1. 嵌套查询\(标准子查询\)
 
    ```
    指子查询可以脱离主查询独立执行
    ```
 
-2. 关联查询(相关子查询)
+2. 关联查询\(相关子查询\)
 
    ```
    关联子查询就是指子查询与主查询之间有条件关联,关联子查询会引用外部查询中的一列或多列。这种子查询之所以被称为关联子查询，是因为子查询的确与外部查询有关。当问题的答案需要依赖于外部查询中包含的每一行中的值时，通常就需要使用关联子查询。
@@ -94,7 +94,7 @@ FROM 表名称 [别名], [表名称 [别名] ,…] ,(
 
 #### 1.6.1、说明
 
-​	WHERE 的主要功能是控制数据行，那么在 WHERE 子句之中，子查询的返回结果一般情况是
+​    WHERE 的主要功能是控制数据行，那么在 WHERE 子句之中，子查询的返回结果一般情况是
 
 1. 单行单列
 2. 多行单列
@@ -102,7 +102,7 @@ FROM 表名称 [别名], [表名称 [别名] ,…] ,(
 
 #### 1.6.2、子查询返回单行单列
 
-​	如果返回单行单行单列可以使用单行操作符:  >、>=、 <、 <= 、<>、=
+​    如果返回单行单行单列可以使用单行操作符:  &gt;、&gt;=、 &lt;、 &lt;= 、&lt;&gt;、=
 
 1、查询出工资比SCOTT还要高的全部雇员信息
 
@@ -138,13 +138,13 @@ FROM 表名称 [别名], [表名称 [别名] ,…] ,(
    SELECT ename,job
    FROM emp
    WHERE job=(SELECT job
-   		  FROM emp
-   		  WHERE ename='SMITH')
+             FROM emp
+             WHERE ename='SMITH')
    ```
 
 3、查询出高于公司平均工资的全部员工信息
 
-1. 公司的平均工资应该使用AVG()函数求出。
+1. 公司的平均工资应该使用AVG\(\)函数求出。
 
    ```mysql
    SELECT AVG(sal) 
@@ -183,34 +183,34 @@ FROM 表名称 [别名], [表名称 [别名] ,…] ,(
    SELECT *
    FROM  emp
    WHERE job=(SELECT job 
-   		  FROM emp
-   		  WHERE ename='ADAMS')
-   	 AND sal>(SELECT sal  
-   			 FROM emp
-   			 WHERE ename='CLARK')	  
+             FROM emp
+             WHERE ename='ADAMS')
+        AND sal>(SELECT sal  
+                FROM emp
+                WHERE ename='CLARK')
    ```
 
 #### 1.6.3、子查询返回单列多行
 
 如果返回的多行单列必须使用多行比较操作符
 
-| 操作符    | 说明             |
-| ------ | -------------- |
-| IN     | 等于列表中的任何一个     |
-| ALL    | 和子查询返回的所有值比较   |
-| exists | 返回结果集为真        |
-| ANY    | 与子查询返回的任意一个值比较 |
+| 操作符 | 说明 |
+| --- | --- |
+| IN | 等于列表中的任何一个 |
+| ALL | 和子查询返回的所有值比较 |
+| exists | 返回结果集为真 |
+| ANY | 与子查询返回的任意一个值比较 |
 
 ##### 1.6.3.1、IN操作符
 
-1. 查询各个职位中工资最高的员工信息(子查询是分组查询)
+1. 查询各个职位中工资最高的员工信息\(子查询是分组查询\)
 
    ```mysql
    SELECT ename, job, sal 
    FROM emp 
    WHERE sal in (SELECT max(sal) 
-   			FROM emp 
-   			GROUP BY job)
+               FROM emp 
+               GROUP BY job)
    ```
 
 2. 查询员工工资跟管理部相同的员工工资
@@ -219,16 +219,16 @@ FROM 表名称 [别名], [表名称 [别名] ,…] ,(
    SELECT * 
    FROM emp 
    WHERE sal IN (SELECT sal 
-   			 FROM emp 
-   			 WHERE job='MANAGER');
+                FROM emp 
+                WHERE job='MANAGER');
    ```
 
 ##### 1.6.3.2、ANY
 
 1、使用方式
 
-1. **<any为小于最大的**
-2. **>any为大于最小的**
+1. **&lt;any为小于最大的**
+2. **&gt;any为大于最小的**
 3. **=ANY：功能与IN操作符是完全一样的**
 
 2、示例代码
@@ -239,17 +239,17 @@ FROM 表名称 [别名], [表名称 [别名] ,…] ,(
    select * 
    from emp 
    where sal>any(select avg(sal) 
-   			 from emp group by deptno)
+                from emp group by deptno)
    ```
 
-2.  询工资低于任何部门的平均工资的员工信息(使用<any)
+2. 询工资低于任何部门的平均工资的员工信息\(使用&lt;any\)
 
    ```mysql
    select * 
    from emp 
    where sal < any (select min(sal) 
-   				from emp 
-   				group by deptno);
+                  from emp 
+                  group by deptno);
    ```
 
    ​
@@ -258,31 +258,31 @@ FROM 表名称 [别名], [表名称 [别名] ,…] ,(
 
 1、使用方式
 
-1. **<ALL：比子查询最小值还要小**
-2. **>ALL：比子查询返回的最大值还要大**
+1. **&lt;ALL：比子查询最小值还要小**
+2. **&gt;ALL：比子查询返回的最大值还要大**
 3. **=ANY:跟IN操作符一样**
-4. ALL(如果有一个内容是null，则不会查询出任何的结果)
+4. ALL\(如果有一个内容是null，则不会查询出任何的结果\)
 
 2 示例代码
 
-1. 查询工资高于所有部门的平均工资的员工(>ALL)
+1. 查询工资高于所有部门的平均工资的员工\(&gt;ALL\)
 
    ```
    select * 
    from emp 
    where sal>all(select avg(sal) 
-   			 from emp group by deptno)		 
+                from emp group by deptno)
    ```
 
    ​
 
-2. 查询工资小于所有部门的平均工资的员工不包括(<ALL)
+2. 查询工资小于所有部门的平均工资的员工不包括\(&lt;ALL\)
 
    ```
    select * 
    from emp 
    where sal<all(select avg(sal) 
-   			 from emp group by deptno) 
+                from emp group by deptno)
    ```
 
 ##### 1.6.3.4、EXISTS 操作符
@@ -291,28 +291,27 @@ FROM 表名称 [别名], [表名称 [别名] ,…] ,(
 
 1. 如果在子查询中存在满足条件的行:不在子查询中继续查找,条件返回 TRUE
 
-
 1. 如果在子查询中不存在满足条件的行:条件返回 FALSE,继续在子查询中查找
 
 2、示例代码
 
-1. 查询是管理员的员工编号,姓名,职位,部门编号信息(关联查询 EXISTS关键字)
+1. 查询是管理员的员工编号,姓名,职位,部门编号信息\(关联查询 EXISTS关键字\)
 
    ```
    SELECT empno, ename, job, deptno
    FROM emp e
    WHERE EXISTS (SELECT *
-   			 FROM emp
-   			 WHERE  mgr =  e.empno);
+                FROM emp
+                WHERE  mgr =  e.empno);
    ```
 
    ​
 
 #### 1.6.4、子查询返回单行多列
 
-​	返回结果在内存中构成一个单行多列的数据表，返回单行多列的子查询在实际应用中与返回单行单列的数据类似，只是查询条件可以扩展成多个，用括号把查询条件括起来
+​    返回结果在内存中构成一个单行多列的数据表，返回单行多列的子查询在实际应用中与返回单行单列的数据类似，只是查询条件可以扩展成多个，用括号把查询条件括起来
 
-​	语法格式: where (列名,列名) in (子查询)
+​    语法格式: where \(列名,列名\) in \(子查询\)
 
 1、查询sal和comm和empno为7698相同的人员的信息
 
@@ -322,8 +321,8 @@ FROM 表名称 [别名], [表名称 [别名] ,…] ,(
    select * 
    from emp 
    where (sal,comm)=(SELECT sal,comm 
-   				FROM emp 
-   				WHERE empno=7698);
+                   FROM emp 
+                   WHERE empno=7698);
    ```
 
 2. 过滤数据
@@ -332,11 +331,11 @@ FROM 表名称 [别名], [表名称 [别名] ,…] ,(
    select * 
    from emp 
    where (sal,comm)=(SELECT sal,comm 
-   				FROM emp 
-   				WHERE empno=7698);
+                   FROM emp 
+                   WHERE empno=7698);
    ```
 
-#### 1.6.5、多行多列(了解)
+#### 1.6.5、多行多列\(了解\)
 
 1. 查询部门中员工每个职位,工资最高的员工的姓名 ,职位还有工资
 
@@ -344,15 +343,15 @@ FROM 表名称 [别名], [表名称 [别名] ,…] ,(
    select ename, job, sal 
    from emp 
    where (sal,job) in (select max(sal), job 
-   				  from emp 
-   				  group by job);
+                     from emp 
+                     group by job);
    ```
 
 ### 1.7、FROM中使用子查询
 
 #### 1.7.1、说明
 
-​	如果在 FROM 子句里面出现的子查询，其返回的结果一定是多行多列数据。
+​    如果在 FROM 子句里面出现的子查询，其返回的结果一定是多行多列数据。
 
 #### 1.7.2、示例代码
 
@@ -372,8 +371,8 @@ FROM 表名称 [别名], [表名称 [别名] ,…] ,(
    ```mysql
    SELECT d.deptno,d.dname,d.loc,temp.count,temp.avg
    FROM dept d,(SELECT deptno dno,COUNT(empno) count,AVG(sal) avg
-   			FROM emp
-   			GROUP BY deptno) temp
+               FROM emp
+               GROUP BY deptno) temp
    WHERE d.deptno=temp.dno(+);
    ```
 
@@ -381,13 +380,13 @@ FROM 表名称 [别名], [表名称 [别名] ,…] ,(
 
    方式一的数据量，
 
-   ​	积的数量：emp 的 14 条 * dept 的 4 条 = 56 条数据；
+   ​    积的数量：emp 的 14 条 \* dept 的 4 条 = 56 条数据；
 
    方式二的数据量
 
-   - 子查询中统计的记录是14条记录，最终统计的显示结果是3条记录；
-   - dept表之中一共有4条记录；
-   - 如果现在产生笛卡尔积的话只有12条记录，再加上子查询中雇员的14条记录，一共才26条记录；
+   * 子查询中统计的记录是14条记录，最终统计的显示结果是3条记录；
+   * dept表之中一共有4条记录；
+   * 如果现在产生笛卡尔积的话只有12条记录，再加上子查询中雇员的14条记录，一共才26条记录；
 
    通过如上的分析，可以发现，使用子查询的确要比使用多表查询更加节省性能，所以在开发之中子查询出现是最多的，而且在给出一个不成文的规定：大部分情况下，如果最终的查询结果之中需要出现SELECT子句，但是又不能直接使用统计函数的时候，就在子查询中统计信息，即：有复杂统计的地方大部分都需要子查询。
 
@@ -396,10 +395,10 @@ FROM 表名称 [别名], [表名称 [别名] ,…] ,(
    ```mysql
    SELECT e.ename, e.sal, e.deptno, temp.salavg
    FROM emp e, (SELECT department_id, AVG(sal) salavg
-   			FROM employees
-   			GROUP BY department_id) temp
-   			WHERE e.deptno = temp.deptno
-   AND e.sal > temp.salavg		
+               FROM employees
+               GROUP BY department_id) temp
+               WHERE e.deptno = temp.deptno
+   AND e.sal > temp.salavg
    ```
 
 3. 查询出部门名称，部门的员工数，部门的平均工资，部门的最低收入雇员的姓名
@@ -407,11 +406,11 @@ FROM 表名称 [别名], [表名称 [别名] ,…] ,(
    ```mysql
    SELECT d.dname,temp.cou,temp.avg,e.ename
    FROM (SELECT deptno,count(1) cou,round(avg(sal)) avg,min(sal) min
-   	 			FROM emp	
-   	 			GROUP BY deptno
-   	 ) temp,
-    	dept d,
-   	emp e
+                    FROM emp    
+                    GROUP BY deptno
+        ) temp,
+        dept d,
+       emp e
    WHERE d.deptno=temp.deptno AND  e.sal=temp.min;
    ```
 
@@ -421,7 +420,7 @@ FROM 表名称 [别名], [表名称 [别名] ,…] ,(
 
 ### 示例代码
 
-1. 查询出高于公司平均工资的部门编号、平均工资 
+1. 查询出高于公司平均工资的部门编号、平均工资
 
    1、计算出公司的平均工资
 
@@ -437,10 +436,10 @@ FROM 表名称 [别名], [表名称 [别名] ,…] ,(
    FROM emp 
    GROUP BY deptno 
    HAVING AVG(sal)>(SELECT AVG(sal) 
-   				FROM emp);
+                   FROM emp);
    ```
 
-2. 查询出平均工资最低的职位信息、人数、平均工资 
+2. 查询出平均工资最低的职位信息、人数、平均工资
 
    1、找到平均工资最低的职位数据
 
@@ -456,7 +455,7 @@ FROM 表名称 [别名], [表名称 [别名] ,…] ,(
    SELECT job,AVG(sal) 
    FROM emp 
    GROUP BY job 
-   HAVING AVG(sal)=(SELECT MIN(AVG(sal)) FROM emp GROUP BY job)				
+   HAVING AVG(sal)=(SELECT MIN(AVG(sal)) FROM emp GROUP BY job)
    ```
 
 3. 查询出部门名称，部门的员工数，部门的平均工资，部门的最低收入雇员的姓名
@@ -464,11 +463,11 @@ FROM 表名称 [别名], [表名称 [别名] ,…] ,(
    ```
    SELECT d.dname,temp.cou,temp.avg,e.ename
    FROM (SELECT deptno,count(1) cou,round(avg(sal)) avg,min(sal) min
-   	 			from scott.emp	
-   	 			GROUP  BY deptno)
-    	temp,
-    	dept d,
-   	emp e
+                    from scott.emp    
+                    GROUP  BY deptno)
+        temp,
+        dept d,
+       emp e
    WHERE d.deptno=temp.deptno AND  e.sal=temp.min;
    ```
 
@@ -480,9 +479,9 @@ FROM 表名称 [别名], [表名称 [别名] ,…] ,(
 
    ```
    SELECT count(*) 员工人数, 
-   	   avg(sal),部门平均工资
-   	   min(sal)最低工资, 
-   	   max(sal) 最高工资
+          avg(sal),部门平均工资
+          min(sal)最低工资, 
+          max(sal) 最高工资
    FROM emp 
    GROUP BY deptno;
    ```
@@ -496,12 +495,12 @@ FROM 表名称 [别名], [表名称 [别名] ,…] ,(
                        avg(sal), 
                        min(sal) min_sal, 
                        max(sal) max_sal 
-           	FROM emp 
-         		GROUP BY deptno) t 
+               FROM emp 
+                 GROUP BY deptno) t 
    WHERE e.sal = t.min_sal;
 ```
 
-   3、查询最高收入者的姓名
+3、查询最高收入者的姓名
 
 ```
    SELECT e.ename 
@@ -510,12 +509,12 @@ FROM 表名称 [别名], [表名称 [别名] ,…] ,(
                        avg(sal), 
                        min(sal) min_sal, 
                        max(sal) max_sal 
-           	FROM emp 
-         		GROUP BY deptno) t 
+               FROM emp 
+                 GROUP BY deptno) t 
    WHERE e.sal = t.min_sal;
 ```
 
-   4、跟第一次查询出来的部门最高收入和最低收入同时关联两张emp 表，分别获取最高收入者和最高收入者的姓名
+4、跟第一次查询出来的部门最高收入和最低收入同时关联两张emp 表，分别获取最高收入者和最高收入者的姓名
 
 ```
    SELECT DEPT.DNAME 部门名称,
@@ -526,10 +525,10 @@ FROM 表名称 [别名], [表名称 [别名] ,…] ,(
           E.ENAME  最低工资人,
           DD.ENAME 最高工资人
    FROM (SELECT DEPTNO, 
-       		COUNT(*) C, 
-       		AVG(SAL) A, 
-       		MIN(SAL) M, 
-       		MAX(SAL) MS
+               COUNT(*) C, 
+               AVG(SAL) A, 
+               MIN(SAL) M, 
+               MAX(SAL) MS
           FROM EMP
           GROUP BY DEPTNO) TEMP,
           DEPT,
@@ -542,4 +541,5 @@ FROM 表名称 [别名], [表名称 [别名] ,…] ,(
           AND DD.DEPTNO = TEMP.DEPTNO
 ```
 
-   ​
+​
+
