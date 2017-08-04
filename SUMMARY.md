@@ -23,7 +23,7 @@
   * [六、子查询](di-san-zhang/liu.md)
   * [七、分页查询](di-san-zhang/qi.md)
   * [八、添加](di-san-zhang/ba.md)
-  * [九、](di-san-zhang/jiu.md)
+  * [九、更新-删除](di-san-zhang/jiu.md)
   * [十](di-san-zhang/shi.md)
 * [第四章 DML](di-si-zhang-dml.md)
   * [一、数据类型](di-si-zhang-dml/yi.md)
