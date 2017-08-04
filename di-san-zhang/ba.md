@@ -1,5 +1,3 @@
-
-
 # 插入操作
 
 ## 1、作用
@@ -19,7 +17,7 @@ VALUE (值,值,值,...)
 
 ### 2.2、示例代码
 
-1. dept 表中插入 dept 表中 deptno=100 的数据(了解)
+1. dept 表中插入 dept 表中 deptno=100 的数据\(了解\)
 
    ```
    insert into dept select * from dept where deptno=100;
@@ -51,11 +49,11 @@ VALUE (值,值,值,...)
 
 3. 添加日期
 
-   第一种：可以按照已有的字符串的格式编写字符串，例如’17-12月-80’；
-   第二种：利用TO_DATE()函数将字符串变为DATE型数据；
+   第一种：可以按照已有的字符串的格式编写字符串，例如’17-12月-80’；  
+   第二种：利用TO\_DATE\(\)函数将字符串变为DATE型数据；  
    第三种：如果设置的时间为当前系统时间，则使用SYSDATE；
 
-## 3、批量插入(10g或以上版本)
+## 3、批量插入\(10g或以上版本\)
 
 ### 3.1、语法格式
 
@@ -76,7 +74,7 @@ VALUE (值,值,值,...)
    INTO 表1 (列名1, 列名2, 列名3)  VALUES ('VALUE1', 'VALUE2', 'VALUE3') 
    INTO 表1 (列名1, 列名2, 列名3)  VALUES ('VALUE1', 'VALUE2', 'VALUE3') 
    INTO 表1 (列名1, 列名2, 列名3)  VALUES ('VALUE1', 'VALUE2', 'VALUE3') 
-   INTO 表1 (列名1, 列名2, 列名3)  VALUES ('VALUE1', 'VALUE2', 'VALUE3') 
+   INTO 表2 (列名1, 列名2, 列名3)  VALUES ('VALUE1', 'VALUE2', 'VALUE3') 
    INTO 表2 (列名1, 列名2, 列名3) VALUES ('VALUE1', ''VALUE2', 'VALUE3') 
    SELECT * FROM dual;
    ```
@@ -117,4 +115,6 @@ VALUE (值,值,值,...)
 3. 插入数据必须满足约束规则，主键列和NOT NULL列必须提供数据值
 
 4. 插入的数据必须与列的个数及顺序保持一致
+
+
 
