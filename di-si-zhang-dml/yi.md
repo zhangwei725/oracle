@@ -167,16 +167,18 @@ DD-MM-YY(HH-MI-SS)
 
 ### 4.1 CLOB 数据类型
 
-它存储单字节和多字节字符数据。支持固定宽度和可变宽度的字符集。CLOB对象可以存储最多 \(4 gigabytes-1\) \* \(database block size\) 大小的字符
+       它存储单字节和多字节字符数据。支持固定宽度和可变宽度的字符集。CLOB对象可以存储最多 \(4 gigabytes-1\) \* \(database block size\) 大小的字符
 
 ### 4.2 NCLOB 数据类型
 
-            它存储UNICODE类型的数据，支持固定宽度和可变宽度的字符集，NCLOB对象可以存储最多\(4 gigabytes-1\) \* \(database block size\)大小的文本数据。
+```
+它存储UNICODE类型的数据，支持固定宽度和可变宽度的字符集，NCLOB对象可以存储最多\(4 gigabytes-1\) \* \(database block size\)大小的文本数据。
+```
 
 ### 4.3 BLOB 数据类型
 
 ```
-      它存储非结构化的二进制数据大对象，它可以被认为是没有字符集语义的比特流，一般是图像、声音、视频等文件。BLOB对象最多存储\(4 gigabytes-1\) \* \(database block size\)的二进制数据。
+它存储非结构化的二进制数据大对象，它可以被认为是没有字符集语义的比特流，一般是图像、声音、视频等文件。BLOB对象最多存储\(4 gigabytes-1\) \* \(database block size\)的二进制数据。
 ```
 
 ### 4.4 BFILE 数据类型
