@@ -21,6 +21,7 @@
   * [四、分组函数](di-san-zhang/si.md)
   * [五、分组查询](di-san-zhang/wu.md)
   * [六、子查询](di-san-zhang/liu.md)
+  * [七](di-san-zhang/qi.md)
 * [第四章 DML](di-si-zhang-dml.md)
   * [一](di-si-zhang-dml/yi.md)
   * [二](di-si-zhang-dml/er.md)
