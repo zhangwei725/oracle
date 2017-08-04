@@ -31,8 +31,6 @@ VALUE (值,值,值,...)
    insert INTO emp(empno,ename,sal) values(222,'2',2000);
    ```
 
-   ​
-
 ### 2.3、说明
 
 1. 添加数字：直接编写数字111，
