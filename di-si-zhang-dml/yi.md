@@ -89,7 +89,7 @@ NUMBER(P,S)
    (可选)s scale的简写表示小数点位数且四舍五入,默认值取决于p，如果没有指定p，那么s是最大范围，如果指定了p，那么s=0
    ```
 
-1. P ,S取值情况
+2. P ,S取值情况
 
    ```
    最高整数位数＝p-s 
@@ -171,11 +171,13 @@ DD-MM-YY(HH-MI-SS)
 
 ### 4.2 NCLOB 数据类型
 
-它存储UNICODE类型的数据，支持固定宽度和可变宽度的字符集，NCLOB对象可以存储最多\(4 gigabytes-1\) \* \(database block size\)大小的文本数据。
+            它存储UNICODE类型的数据，支持固定宽度和可变宽度的字符集，NCLOB对象可以存储最多\(4 gigabytes-1\) \* \(database block size\)大小的文本数据。
 
 ### 4.3 BLOB 数据类型
 
-          它存储非结构化的二进制数据大对象，它可以被认为是没有字符集语义的比特流，一般是图像、声音、视频等文件。BLOB对象最多存储\(4 gigabytes-1\) \* \(database block size\)的二进制数据。
+```
+      它存储非结构化的二进制数据大对象，它可以被认为是没有字符集语义的比特流，一般是图像、声音、视频等文件。BLOB对象最多存储\(4 gigabytes-1\) \* \(database block size\)的二进制数据。
+```
 
 ### 4.4 BFILE 数据类型
 
