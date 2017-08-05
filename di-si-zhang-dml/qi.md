@@ -22,12 +22,9 @@
 1. 唯一索引
 2. 非唯一索引
 
-此外还有函数索引、全局索引、分区索引等。  
+此外还有函数索引、全局索引、分区索引等。
 
-
-语法格式
-
-
+语法格式     
 
 
 
@@ -75,8 +72,9 @@
 1. Not Null/Null 如果某列建立索引,当进行Select \* from emp where depto is not null/is null。 则会是索引失效。
 2. 索引列上不要使用函数,SELECT Col FROM tbl WHERE substr\(name ,1 ,3 \) = 'ABC' 或者SELECT Col FROM tbl WHERE name LIKE '%ABC%' 而SELECT Col FROM tbl WHERE name LIKE 'ABC%' 会使用索引。
 
-1. 索引列上不能进行计算SELECT Col FROM tbl WHERE col / 10 &gt; 10 则会使索引失效，应该改成SELECT Col FROM tbl WHERE col &gt; 10 \* 10
-2. 索引列上不要使用NOT （ != 、 &lt;&gt; ）如:SELECT Col FROM tbl WHERE col ! = 10 应该 改成：SELECT Col FROM tbl WHERE col &gt; 10 OR col &lt; 10 。
+3. 索引列上不能进行计算SELECT Col FROM tbl WHERE col / 10 &gt; 10 则会使索引失效，应该改成SELECT Col FROM tbl WHERE col &gt; 10 \* 10
+
+4. 索引列上不要使用NOT （ != 、 &lt;&gt; ）如:SELECT Col FROM tbl WHERE col ! = 10 应该 改成：SELECT Col FROM tbl WHERE col &gt; 10 OR col &lt; 10 。
 
 ### 6、索引缺点
 
