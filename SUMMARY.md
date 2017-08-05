@@ -31,7 +31,7 @@
   * [四、修改表](di-si-zhang-dml/si.md)
   * [五、删除表](di-si-zhang-dml/wu.md)
   * 六
-  * [七](di-si-zhang-dml/qi.md)
+  * [七、创建索引](di-si-zhang-dml/qi.md)
 * [第五章 其他](di-wu-zhang-qi-ta.md)
   * [一、用户管理](di-wu-zhang-qi-ta/yi.md)
   * [二、多表查询连接类型](di-wu-zhang-qi-ta/lian-jie-lei-xing.md)
