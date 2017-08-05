@@ -32,10 +32,10 @@
   * [五、删除表](di-si-zhang-dml/wu.md)
   * 六
   * [七、创建索引](di-si-zhang-dml/qi.md)
-* [第五章 其他](di-wu-zhang-qi-ta.md)
+* 第五章 其他
   * [一、用户管理](di-wu-zhang-qi-ta/yi.md)
-  * [二、多表查询连接类型](di-wu-zhang-qi-ta/lian-jie-lei-xing.md)
-  * [三、优化总结](di-wu-zhang-qi-ta/you-hua-zong-jie.md)
+  * [二、多表查询连接类型](di-wu-zhang-qi-ta/er.md)
+  * [三、优化总结](di-wu-zhang-qi-ta/san.md)
   * [四、数据导入导出](di-wu-zhang-qi-ta/si.md)
 * [练习题](lian-xi.md)
 
