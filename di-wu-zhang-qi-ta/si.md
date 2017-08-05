@@ -68,7 +68,7 @@ grant connect,resource,dba to test
 imp test/123456@TS fromuser=test_2 touser=test_2  file=d:\expdata.dmp;
 ```
 
-# 2、采用数据泵快速导入导出
+# 二、采用数据泵快速导入导出
 
 ### 1、数据泵导入条件
 
