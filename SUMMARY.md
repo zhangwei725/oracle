@@ -34,6 +34,6 @@
   * [一、用户管理](di-wu-zhang-qi-ta/yi.md)
   * [二、多表查询连接类型](di-wu-zhang-qi-ta/lian-jie-lei-xing.md)
   * [三、优化总结](di-wu-zhang-qi-ta/you-hua-zong-jie.md)
-  * [四](di-wu-zhang-qi-ta/si.md)
+  * [四、](di-wu-zhang-qi-ta/si.md)
 * [练习题](lian-xi.md)
 

@@ -1,4 +1,4 @@
-# 1、常规导入导出
+# 常规导入导出
 
 ## 1、导出dmp文件
 
@@ -54,7 +54,7 @@ ORDER BY B.TABLESPACE_NAME) GROUP BY TBS;
 create user test identified by test default tablespace TEST_SPACE
 ```
 
-其中 TEST_SPACE代表指定的表空间，导入的数据到指定的表空间中。
+其中 TEST\_SPACE代表指定的表空间，导入的数据到指定的表空间中。
 
 #### 2.2、授权用户操作
 
@@ -164,3 +164,6 @@ imp test/123456@TS fromuser=test_2 touser=test_2  file=d:\expdata.dmp;
    ```
    impdp system/manager DIRECTORY=dpdata1 DUMPFILE=expdp.dmp SCHEMAS=system TABLE_EXISTS_ACTION
    ```
+
+
+
