@@ -1,7 +1,7 @@
 # Summary
 
 * [前言](README.md)
-* 第一章 简介
+* [第一章 简介](di-yi-zhang-jian-jie.md)
   * [一、Oracle基础](di-yi-zhang/oracleji-chu.md)
   * [二、ORACLE发展史\(了解\)](di-yi-zhang/er-3001-oracle-fa-zhan-53f228-le-89e329.md)
   * [三、开发流程](di-yi-zhang/san.md)
@@ -9,12 +9,12 @@
   * [五、什么是Oracle数据库?](di-yi-zhang/wu.md)
   * [六、SQL结构化查询语言](di-yi-zhang/liu.md)
   * [七、开发重要知识点介绍](di-yi-zhang/qi.md)
-* 第二章 DML
+* [第二章 DML](di-er-zhang-dml.md)
   * [一、SQL Plus基础命令](di-er-zhang/yi.md)
   * [二、简单查询\(控制列\)](di-er-zhang/er.md)
   * [三、限定查询\(控制行\)](di-er-zhang/san.md)
   * [四、排序](di-er-zhang/si.md)
-* 第三章 进阶
+* [第三章 进阶](di-san-zhang-jin-jie.md)
   * [一、单行函数查询](di-san-zhang/yi.md)
   * [二、多表查询](di-san-zhang/er.md)
   * [三、多表查询2](di-san-zhang/san.md)
@@ -24,7 +24,7 @@
   * [七、分页查询](di-san-zhang/qi.md)
   * [八、添加](di-san-zhang/ba.md)
   * [九、更新-删除](di-san-zhang/jiu.md)
-* 第四章 DML
+* [第四章 DML](di-si-zhang-dml.md)
   * [一、数据类型](di-si-zhang-dml/yi.md)
   * [二、约束](di-si-zhang-dml/er.md)
   * [三、创建表](di-si-zhang-dml/san.md)
