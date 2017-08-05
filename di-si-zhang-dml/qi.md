@@ -2,11 +2,11 @@
 
 ### 1、定义
 
-​	索引这个数据结构用于加速对数据库中特定行的访问。它与特定的表相关联，包含来自这个表的一列或者多个列的数据，索引主要进行提高数据的查询速度。 当进行DML时，会更新索引。因此索引越多，则DML越慢，其需要维护索引。 因此在创建索引及DML需要权衡
+​    索引这个数据结构用于加速对数据库中特定行的访问。它与特定的表相关联，包含来自这个表的一列或者多个列的数据，索引主要进行提高数据的查询速度。 当进行DML时，会更新索引。因此索引越多，则DML越慢，其需要维护索引。 因此在创建索引及DML需要权衡
 
 ### 2、分类
 
-#### 2.1、按照数据存储方式，	
+#### 2.1、按照数据存储方式，
 
 1. B-树索引
 2. 反向索引
@@ -22,7 +22,14 @@
 1. 唯一索引
 2. 非唯一索引
 
-此外还有函数索引、全局索引、分区索引等。	
+此外还有函数索引、全局索引、分区索引等。  
+
+
+语法格式
+
+
+
+
 
 ### 3 示例代码
 
@@ -65,12 +72,11 @@
 
 ### 5、索引失效的情况
 
-1.  Not Null/Null 如果某列建立索引,当进行Select * from emp where depto is not null/is null。 则会是索引失效。
-2. 索引列上不要使用函数,SELECT Col FROM tbl WHERE substr(name ,1 ,3 ) = 'ABC' 或者SELECT Col FROM tbl WHERE name LIKE '%ABC%' 而SELECT Col FROM tbl WHERE name LIKE 'ABC%' 会使用索引。
+1. Not Null/Null 如果某列建立索引,当进行Select \* from emp where depto is not null/is null。 则会是索引失效。
+2. 索引列上不要使用函数,SELECT Col FROM tbl WHERE substr\(name ,1 ,3 \) = 'ABC' 或者SELECT Col FROM tbl WHERE name LIKE '%ABC%' 而SELECT Col FROM tbl WHERE name LIKE 'ABC%' 会使用索引。
 
-
-1. 索引列上不能进行计算SELECT Col FROM tbl WHERE col / 10 > 10 则会使索引失效，应该改成SELECT Col FROM tbl WHERE col > 10 * 10
-2.  索引列上不要使用NOT （ != 、 <> ）如:SELECT Col FROM tbl WHERE col ! = 10 应该 改成：SELECT Col FROM tbl WHERE col > 10 OR col < 10 。
+1. 索引列上不能进行计算SELECT Col FROM tbl WHERE col / 10 &gt; 10 则会使索引失效，应该改成SELECT Col FROM tbl WHERE col &gt; 10 \* 10
+2. 索引列上不要使用NOT （ != 、 &lt;&gt; ）如:SELECT Col FROM tbl WHERE col ! = 10 应该 改成：SELECT Col FROM tbl WHERE col &gt; 10 OR col &lt; 10 。
 
 ### 6、索引缺点
 
@@ -83,4 +89,6 @@
 1. 能用唯一索引，一定用唯一索引 
 2. 能加非空，就加非空约束 
 3. 联合索引的顺序不同，影响索引的选择，尽量将值少的放在前面 
+
+
 
