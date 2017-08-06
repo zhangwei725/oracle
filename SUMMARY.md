@@ -35,7 +35,7 @@
   * [三、创建序列](di-wu-zhang/san.md)
   * [四、创建同义词](di-wu-zhang/si.md)
 * [第六章 其他](di-liu-zhang.md)
-  * [一、用户管理](di-liu-zhang/yi.md)
+  * [一、用户管理](di-liu-zhang/yi-yong-hu-guan-li.md)
   * [二、多表查询连接类型](di-liu-zhang/er.md)
   * [三、优化总结](di-liu-zhang/san.md)
   * [四、数据导入导出](di-liu-zhang/si.md)
