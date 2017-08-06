@@ -253,6 +253,12 @@
 
 4. 截断表：truncate
 
+   ```
+   TRUNCATE TABLE 表名称
+   ```
+
+   ​
+
 
 
 
