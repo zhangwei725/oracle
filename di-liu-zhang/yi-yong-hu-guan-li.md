@@ -13,20 +13,20 @@
 
 2. sys用户具有“SYSDBA”或者“SYSOPER”权限，登陆系统也只能用这两个身份不能用normal
 
-   | SYSDBA | SYSOPER |
-   | --- | --- |
-   | Startup\(启动数据库\) | startup |
-   | Shutdown\(关闭数据库\) | shutdown |
-   | alter database open/mount/backup | alter database open/mount/backup |
-   | 改变字符集 | none |
-   | create database\(创建数据库\) | None不能创建数据库 |
-   | drop database\(删除数据库\) | none |
-   | create spfile | create spfile |
-   | alter database archivelog\(归档日志\) | alter database archivelog |
-   | alter database recover\(恢复数据库\) | 只能完全恢复，不能执行不完全恢复 |
-   | 拥有restricted session\(会话限制\)权限 | 拥有restricted session权限 |
-   | 可以让用户作为sys用户连接 | 可以进行一些基本的操作，但不能查看用户数据 |
-   | 登录之后用户是sys | 登录之后用户是public |
+   | SYSDBA                            | SYSOPER                          |
+   | --------------------------------- | -------------------------------- |
+   | Startup\(启动数据库\)                  | startup                          |
+   | Shutdown\(关闭数据库\)                 | shutdown                         |
+   | alter database open/mount/backup  | alter database open/mount/backup |
+   | 改变字符集                             | none                             |
+   | create database\(创建数据库\)          | None不能创建数据库                      |
+   | drop database\(删除数据库\)            | none                             |
+   | create spfile                     | create spfile                    |
+   | alter database archivelog\(归档日志\) | alter database archivelog        |
+   | alter database recover\(恢复数据库\)   | 只能完全恢复，不能执行不完全恢复                 |
+   | 拥有restricted session\(会话限制\)权限    | 拥有restricted session权限           |
+   | 可以让用户作为sys用户连接                    | 可以进行一些基本的操作，但不能查看用户数据            |
+   | 登录之后用户是sys                        | 登录之后用户是public                    |
 
 ## 2、权限
 
@@ -197,7 +197,9 @@
    TO zhangwei
    ```
 
-## 8、其他命令
+## 8、其他
+
+### 8.1、其他命令
 
 ```
 查询用户拥有哪里权限：
@@ -220,6 +222,10 @@
 查自己拥有哪些系统权限
     select * from session_privs;
 ```
+
+### 8.2、用户角色权限关系图
+
+![](http://opzv089nq.bkt.clouddn.com/17-8-6/18510971.jpg)
 
 
 
