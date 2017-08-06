@@ -32,7 +32,7 @@
   * [五、删除表](di-si-zhang-dml/wu.md)
   * [六、创建视图](di-si-zhang-dml/liu.md)
   * [七、创建索引](di-si-zhang-dml/qi.md)
-* [第五章 常用对象](di-liu-zhang.md)
+* [第五章 常用对象](di-wu-zhang.md)
   * [一](di-wu-zhang/yi.md)
   * [二](di-wu-zhang/er.md)
 * [第六章 其他](di-liu-zhang.md)
