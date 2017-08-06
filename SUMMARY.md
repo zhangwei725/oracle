@@ -35,10 +35,10 @@
 * [第五章 常用对象](di-liu-zhang.md)
   * 一
   * 二
-* [第六章 其他](di-wu-zhang-qi-ta.md)
-  * [一、用户管理](di-wu-zhang-qi-ta/yi.md)
-  * [二、多表查询连接类型](di-wu-zhang-qi-ta/er.md)
-  * [三、优化总结](di-wu-zhang-qi-ta/san.md)
-  * [四、数据导入导出](di-wu-zhang-qi-ta/si.md)
+* [第六章 其他](di-liu-zhang.md)
+  * [一、用户管理](di-liu-zhang/yi.md)
+  * [二、多表查询连接类型](di-liu-zhang/er.md)
+  * [三、优化总结](di-liu-zhang/san.md)
+  * [四、数据导入导出](di-liu-zhang/si.md)
 * [练习题](lian-xi.md)
 
