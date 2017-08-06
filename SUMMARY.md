@@ -35,6 +35,8 @@
 * [第五章 常用对象](di-wu-zhang.md)
   * [一](di-wu-zhang/yi.md)
   * [二](di-wu-zhang/er.md)
+  * [三](di-wu-zhang/san.md)
+  * [四](di-wu-zhang/si.md)
 * [第六章 其他](di-liu-zhang.md)
   * [一、用户管理](di-liu-zhang/yi.md)
   * [二、多表查询连接类型](di-liu-zhang/er.md)
