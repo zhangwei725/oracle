@@ -30,7 +30,7 @@
   * [三、创建表](di-si-zhang-dml/san.md)
   * [四、修改表](di-si-zhang-dml/si.md)
 * [第五章 常用对象](di-wu-zhang.md)
-  * [一、创建视图](di-wu-zhang/yi.md)
+  * [一、创建视图](di-wu-zhang/yi-shitu.md)
   * [二、创建索引](di-wu-zhang/er.md)
   * [三、创建序列](di-wu-zhang/san.md)
   * [四、创建同义词](di-wu-zhang/si.md)
