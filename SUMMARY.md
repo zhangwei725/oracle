@@ -32,7 +32,8 @@
   * [五、删除表](di-si-zhang-dml/wu.md)
   * [六、创建视图](di-si-zhang-dml/liu.md)
   * [七、创建索引](di-si-zhang-dml/qi.md)
-* 第五章 其他
+* [第五章 常用对象](di-liu-zhang.md)
+* [第六章 其他](di-wu-zhang-qi-ta.md)
   * [一、用户管理](di-wu-zhang-qi-ta/yi.md)
   * [二、多表查询连接类型](di-wu-zhang-qi-ta/er.md)
   * [三、优化总结](di-wu-zhang-qi-ta/san.md)
