@@ -196,12 +196,12 @@ FROM 表名称 [别名], [表名称 [别名] ,…] ,(
 
 如果返回的多行单列必须使用多行比较操作符
 
-| 操作符 | 说明 |
-| --- | --- |
-| IN | 等于列表中的任何一个 |
-| ALL | 和子查询返回的所有值比较 |
-| exists | 返回结果集为真 |
-| ANY | 与子查询返回的任意一个值比较 |
+| 操作符    | 说明             |
+| ------ | -------------- |
+| IN     | 等于列表中的任何一个     |
+| ALL    | 和子查询返回的所有值比较   |
+| exists | 返回结果集为真        |
+| ANY    | 与子查询返回的任意一个值比较 |
 
 ##### 1.6.3.1、IN操作符
 
@@ -396,9 +396,9 @@ FROM 表名称 [别名], [表名称 [别名] ,…] ,(
 
    ```mysql
    SELECT e.ename, e.sal, e.deptno, temp.salavg
-   FROM emp e,   (SELECT DEPTNO, ROUND(AVG(sal),2) salavg
-   FROM EMP   GROUP BY DEPTNO) temp
-   WHERE e.deptno = temp.deptno    AND e.sal > temp.salavg
+   FROM emp e, (SELECT DEPTNO, ROUND(AVG(sal),2) salavg
+   FROM EMP   GROUP BY DEPTNO) temp
+   WHERE e.deptno = temp.deptno    AND e.sal > temp.salavg
    ```
 
 3. 查询出部门名称，部门的员工数，部门的平均工资，部门的最低收入雇员的姓名
