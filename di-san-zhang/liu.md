@@ -396,10 +396,9 @@ FROM 表名称 [别名], [表名称 [别名] ,…] ,(
 
    ```mysql
    SELECT e.ename, e.sal, e.deptno, temp.salavg
-   FROM emp e, 
-   (SELECT DEPTNO, ROUND(AVG(sal),2)salavg
+   FROM emp e,   (SELECT DEPTNO, ROUND(AVG(sal),2) salavg
    FROM EMP   GROUP BY DEPTNO) temp
-   WHERE e.deptno = temp.deptno    AND e.sal > temp.salavg
+   WHERE e.deptno = temp.deptno    AND e.sal > temp.salavg
    ```
 
 3. 查询出部门名称，部门的员工数，部门的平均工资，部门的最低收入雇员的姓名
